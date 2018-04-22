@@ -1,0 +1,36 @@
+// Brand colors
+$brand-black: #000000;
+$brand-white: #ffffff;
+$brand-gray:         darken($brand-white, 60%); //#666666
+$brand-gray-dark:    darken($brand-white, 74%); //#424242
+$brand-gray-darken:  darken($brand-white, 80%); //#333333
+$brand-gray-light:   darken($brand-white, 35%); //#a6a6a6
+$brand-gray-lighter: darken($brand-white, 21%); //#363636
+
+$brand-red: #e50000;
+$brand-gray: #0e0f0f;
+
+$brand-gray-light: lighten($brand-gray, 5%);
+$brand-gray-lighter: lighten($brand-gray, 10%);
+
+$brand-gray-body: lighten($brand-gray, 3%); //#1a1c1c
+
+// Base brand visual parts
+$base-font-size:    16px;
+$base-font-weight:  300;
+$base-font-color:   $brand-black;
+$base-background:   $brand-white;
+
+// Brand images url
+/*$base-selected-arrow-white: url("/img/common/arrows/ico_check_white.svg");
+$base-selected-arrow-red:   url("/img/common/arrows/ico_check_red.svg");
+$base-cancel-black:   url("/img/common/arrows/ico_cancel_black.svg");*/
+
+// Effects
+$base-transition: all .3s ease;
+
+// Sizes
+/*$laptop:   1200px;
+$tablet:   992px;
+$mobile: 768px;*/
+$mobile: 450px;

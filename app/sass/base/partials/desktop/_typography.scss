@@ -1,0 +1,195 @@
+// Here is brand typography. Base scss file located at: resources/assets/sass/base/partials/_typography.scss
+
+@import url('https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,600,700,800,900|Open+Sans:300,400,600,700,800|Roboto:100,300,400,500,700,900');
+@for $i from 1 through 9 {
+  @if $i == 1 or $i == 2 or $i == 3 or $i == 5 or $i == 7 or $i == 9 {
+    /*@include fontFace('Roboto', '../fonts/Roboto/Roboto-#{$i*100}', normal, #{$i*100});
+    @include fontFace('Roboto', '../fonts/Roboto/Roboto-#{$i*100}i', italic, #{$i*100});*/
+  }
+}
+@for $i from 3 through 5 {
+  /*@include fontFace('Politica', '../fonts/Politica/Politica-#{$i*100}', normal, #{$i*100});
+  @include fontFace('Politica', '../fonts/Politica/Politica-#{$i*100}i', italic, #{$i*100});*/
+}
+%text-default {
+  padding-bottom: 6px;
+  font-weight: 200;
+}
+%title-default {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 300;
+  margin: 0 0 10px;
+}
+%href-default {
+  position: relative;
+  padding-right: 14px;
+}
+%text-color {
+  &[data-color="white"] {
+    color: $brand-white;
+  }
+  &[data-color="red"] {
+    color: $brand-red;
+  }
+  &[data-color="gray"] {
+    color: #2a2a2a;
+  }
+}
+%text-style {
+  @for $i from 1 through 9 {
+    &[data-style="bold-#{$i}"] {
+      font-weight: #{$i*100};
+    }
+  }
+  &[data-style="italic"] {
+    font-style: italic;
+  }
+}
+%custom-size {
+  @for $i from 10 through 40 {
+    &[data-custom-size="#{$i}"] {
+      font-size: #{$i}px;
+    }
+  }
+}
+%custom-weight {
+  @for $i from 1 through 9 {
+    &[data-custom-weight="#{$i*100}"] {
+      font-weight: #{$i * 100};
+    }
+  }
+}
+
+a, p, span, input {
+  font-family: "Open Sans", sans-serif;
+  @extend %title-default;
+  @extend %custom-size;
+  @extend %text-color;
+  @extend %custom-weight;
+}
+
+.page__title {
+  margin-bottom: 20px;
+  @extend %title-default;
+  @extend %custom-size;
+  @extend %text-color;
+  @extend %custom-weight;
+
+  &--xs, h5,
+  &--sm, h4,
+  &--md, h3,
+  &--lg, h2,
+  &--xl, h1,
+  span, p, a {
+    @extend %title-default;
+    @extend %custom-size;
+    @extend %text-color;
+    @extend %custom-weight;
+  }
+
+  &--xs, h5, {
+    font-size: 20px;
+    span, p, a {
+      font-size: 20px;
+    }
+  }
+  &--sm, h4 {
+    font-size: 30px;
+    font-weight: 800;
+    span, p, a {
+      font-size: 30px;
+      font-weight: 800;
+    }
+  }
+  &--md, h3 {
+    font-size: 40px;
+    font-weight: 600;
+    span, p, a {
+      font-size: 40px;
+      font-weight: 600;
+    }
+  }
+  &--lg, h2 {
+    font-size: 50px;
+    span, p, a {
+      font-size: 50px;
+    }
+  }
+  &--xl, h1 {
+    font-weight: 800;
+    font-size: 60px;
+    span, p, a {
+      font-size: 60px;
+      font-weight: 900;
+    }
+  }
+}
+.page__text {
+  font-size: 16px;
+  @extend %text-default;
+  @extend %text-color;
+  @extend %custom-weight;
+  @extend %custom-size;
+
+  &--xs,
+  &--sm,
+  &--md,
+  &--lg,
+  &--xl {
+    @extend %text-default;
+    @extend %text-color;
+    @extend %custom-weight;
+    @extend %custom-size;
+  }
+  &--xs {
+    font-size: 12px;
+  }
+  &--sm {
+    font-size: 14px;
+  }
+  &--md {
+    font-size: 18px;
+  }
+  &--lg {
+    font-size: 20px;
+  }
+  &--xl {
+    font-size: 22px;
+  }
+}
+.page__href {
+  &--xs,
+  &--sm,
+  &--md,
+  &--lg,
+  &--xl {
+    @extend %href-default;
+    @extend %custom-size;
+    @extend %text-color;
+
+    &:after {
+      content: '';
+      position: absolute;
+      top: calc(50% - 3px);
+      right: 0;
+      width: 10px;
+      height: 6px;
+      background: url(../img/ico/ico_arrow_02.svg) center/cover no-repeat;
+    }
+  }
+  &--xs {
+    font-size: 12px;
+  }
+  &--sm {
+    font-size: 14px;
+  }
+  &--md {
+    font-size: 18px;
+  }
+  &--lg {
+    font-size: 20px;
+  }
+  &--xl {
+    font-size: 22px;
+  }
+}

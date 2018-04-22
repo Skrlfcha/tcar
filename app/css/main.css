@@ -1,0 +1,580 @@
+/*$base-selected-arrow-white: url("/img/common/arrows/ico_check_white.svg");
+$base-selected-arrow-red:   url("/img/common/arrows/ico_check_red.svg");
+$base-cancel-black:   url("/img/common/arrows/ico_cancel_black.svg");*/
+/*$laptop:   1200px;
+$tablet:   992px;
+$mobile: 768px;*/
+@import url("https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,600,700,800,900|Open+Sans:300,400,600,700,800|Roboto:100,300,400,500,700,900");
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+.page__section {
+  position: relative;
+  overflow: hidden; }
+  .page__section--fullpage {
+    height: 100vh; }
+  .page__section--halfpage {
+    height: 400px;
+    font-size: 0; }
+  .page__section--gray {
+    background: #2a2a2a; }
+  .page__section--red {
+    background: #e50000; }
+  .page__section--main {
+    position: relative;
+    width: 100%;
+    height: calc(100vh - 80px);
+    margin-top: 80px;
+    background: #3a3a3a; }
+
+.page__absolute-elements {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  padding: 80px 0;
+  z-index: 0; }
+
+.page__absolute-text {
+  position: absolute;
+  color: #fff; }
+  .page__absolute-text--hashtag span:nth-of-type(1) {
+    font-size: 20px;
+    font-weight: 700;
+    font-family: "Montserrat", sans-serif;
+    color: #ff1313; }
+  .page__absolute-text--main span:nth-of-type(2),
+  .page__absolute-text--main span:nth-of-type(3) {
+    font-size: 16px;
+    font-family: "Montserrat", sans-serif; }
+  .page__absolute-text--main span:nth-of-type(2) {
+    font-weight: 700; }
+  .page__absolute-text--main span:nth-of-type(3) {
+    font-weight: 400; }
+  .page__absolute-text--secondary span:nth-of-type(1),
+  .page__absolute-text--secondary span:nth-of-type(2) {
+    font-size: 14px;
+    font-family: "Montserrat", sans-serif; }
+  .page__absolute-text--secondary span:nth-of-type(1) {
+    font-weight: 400; }
+  .page__absolute-text--secondary span:nth-of-type(2) {
+    font-weight: 700; }
+
+.page__absolute-container {
+  width: 90%;
+  height: 100%;
+  margin: 0 auto;
+  position: relative; }
+
+.page__absolute-sliderNumber {
+  position: absolute;
+  right: -7px;
+  color: #fff;
+  font-family: 'Open Sans', sans-serif;
+  transform: rotate(90deg); }
+  .page__absolute-sliderNumber span:nth-of-type(1) {
+    color: #e50000;
+    font-size: 24px;
+    font-weight: 600;
+    letter-spacing: -5px; }
+
+.page__absolute-arrowDown {
+  position: absolute;
+  left: -20px;
+  bottom: 20px;
+  width: 80px;
+  height: 40px;
+  background: url("/app/img/ico/ico_arrow_left.png") center/64px no-repeat, transparent;
+  transform: rotate(-90deg);
+  transition: all .3s ease-in-out;
+  cursor: pointer; }
+  .page__absolute-arrowDown:hover {
+    background: url("/app/img/ico/ico_arrow_left.png") center/64px no-repeat, rgba(255, 255, 255, 0.2); }
+
+.page__container {
+  display: table;
+  height: 100%;
+  width: 1200px;
+  margin: 0 auto; }
+  .page__container .page__vertical-aligment {
+    display: table-cell;
+    vertical-align: middle; }
+
+.page__buttons-container {
+  max-width: 700px;
+  height: 70px;
+  border-bottom: 1px solid #e50000;
+  color: #fff;
+  font-family: "Open Sans", sans-serif;
+  font-size: 0;
+  margin-top: 80px; }
+  .page__buttons-container .page__nav-button {
+    display: inline-block;
+    width: 50%;
+    font-size: 16px;
+    font-weight: 600;
+    text-align: center;
+    line-height: 4.3;
+    transition: all .3s ease-in-out;
+    cursor: pointer; }
+    .page__buttons-container .page__nav-button:nth-of-type(1) {
+      background: #2a2a2a; }
+      .page__buttons-container .page__nav-button:nth-of-type(1):hover {
+        background: #383838; }
+    .page__buttons-container .page__nav-button:nth-of-type(2) {
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      border-left: 0;
+      border-bottom: 0; }
+      .page__buttons-container .page__nav-button:nth-of-type(2):hover {
+        background: rgba(255, 255, 255, 0.1); }
+
+.page__slider--main {
+  position: relative;
+  width: 100%;
+  height: 100%; }
+
+.page__slider-content {
+  width: 100%;
+  height: calc(100vh - 80px); }
+  .page__slider-content[data-image="1"] {
+    background: url("/app/img/photos/bg_01_mainpage_slide_01.jpg") center/cover no-repeat; }
+  .page__slider-content[data-image="2"] {
+    background: url("/app/img/photos/bg_01_mainpage_slide_02.jpg") center/cover no-repeat; }
+  .page__slider-content[data-image="3"] {
+    background: url("/app/img/photos/bg_01_mainpage_slide_03.jpg") center/cover no-repeat; }
+
+.page__half-group {
+  display: inline-block;
+  width: 50%;
+  height: 400px;
+  float: left; }
+
+.page__content--half-wrapper {
+  position: relative;
+  width: calc(1200px / 2);
+  height: 100%;
+  margin: 0 0 0 auto;
+  padding: 0;
+  padding-right: 70px; }
+  .page__content--half-wrapper--reverse {
+    margin: 0;
+    padding: 0;
+    margin-left: 70px; }
+
+.page__aligment {
+  display: table;
+  height: 400px;
+  width: 100%; }
+  .page__aligment .page__bottom-aligment {
+    display: table-cell;
+    vertical-align: bottom;
+    padding-bottom: 80px;
+    padding-top: 80px; }
+
+.page__slider-button-next.js-goto-slider {
+  width: 100px;
+  height: 60px;
+  position: absolute;
+  background: url("/app/img/ico/ico_arrow_right.png") center/70px no-repeat, transparent;
+  bottom: 10px;
+  left: 0;
+  transition: all .3s ease-in-out;
+  cursor: pointer; }
+
+.page__section--gray .page__slider-button-next.js-goto-slider:hover {
+  background: url("/app/img/ico/ico_arrow_right.png") center/70px no-repeat, rgba(255, 255, 255, 0.1); }
+
+.page__section--red .page__slider-button-next.js-goto-slider:hover {
+  background: url("/app/img/ico/ico_arrow_right.png") center/70px no-repeat, rgba(42, 42, 42, 0.1); }
+
+.page__image--half-img01 {
+  position: relative;
+  background: url("/app/img/photos/img_half-slide_01.jpg") center/cover no-repeat; }
+
+.page__image--half-img02 {
+  position: relative;
+  background: url("/app/img/photos/img_half-slide_02.jpg") center/cover no-repeat; }
+
+.page__image--half-img03 {
+  position: relative;
+  background: url("/app/img/photos/img_half-slide_03.jpg") center/cover no-repeat; }
+
+.page__image--half-img04 {
+  position: relative;
+  background: url("/app/img/photos/img_half-slide_04.jpg") center/cover no-repeat; }
+
+.u-top-right-rotated {
+  right: -58px;
+  top: 120px;
+  transform: rotate(90deg); }
+
+/*@include fontFace('Roboto', '../fonts/Roboto/Roboto-100', normal, 100);
+    @include fontFace('Roboto', '../fonts/Roboto/Roboto-100i', italic, 100);*/
+/*@include fontFace('Roboto', '../fonts/Roboto/Roboto-200', normal, 200);
+    @include fontFace('Roboto', '../fonts/Roboto/Roboto-200i', italic, 200);*/
+/*@include fontFace('Roboto', '../fonts/Roboto/Roboto-300', normal, 300);
+    @include fontFace('Roboto', '../fonts/Roboto/Roboto-300i', italic, 300);*/
+/*@include fontFace('Roboto', '../fonts/Roboto/Roboto-500', normal, 500);
+    @include fontFace('Roboto', '../fonts/Roboto/Roboto-500i', italic, 500);*/
+/*@include fontFace('Roboto', '../fonts/Roboto/Roboto-700', normal, 700);
+    @include fontFace('Roboto', '../fonts/Roboto/Roboto-700i', italic, 700);*/
+/*@include fontFace('Roboto', '../fonts/Roboto/Roboto-900', normal, 900);
+    @include fontFace('Roboto', '../fonts/Roboto/Roboto-900i', italic, 900);*/
+/*@include fontFace('Politica', '../fonts/Politica/Politica-300', normal, 300);
+  @include fontFace('Politica', '../fonts/Politica/Politica-300i', italic, 300);*/
+/*@include fontFace('Politica', '../fonts/Politica/Politica-400', normal, 400);
+  @include fontFace('Politica', '../fonts/Politica/Politica-400i', italic, 400);*/
+/*@include fontFace('Politica', '../fonts/Politica/Politica-500', normal, 500);
+  @include fontFace('Politica', '../fonts/Politica/Politica-500i', italic, 500);*/
+.page__text, .page__text--xs, .page__text--sm, .page__text--md, .page__text--lg, .page__text--xl {
+  padding-bottom: 6px;
+  font-weight: 200; }
+
+a, p, span, input, .page__title, .page__title--xs, .page__title h5, .page__title--sm, .page__title h4, .page__title--md, .page__title h3, .page__title--lg, .page__title h2, .page__title--xl, .page__title h1,
+.page__title span, .page__title p, .page__title a {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 300;
+  margin: 0 0 10px; }
+
+.page__href--xs, .page__href--sm, .page__href--md, .page__href--lg, .page__href--xl {
+  position: relative;
+  padding-right: 14px; }
+
+a[data-color="white"], p[data-color="white"], span[data-color="white"], input[data-color="white"], .page__title[data-color="white"], .page__title--xs[data-color="white"], .page__title h5[data-color="white"], .page__title--sm[data-color="white"], .page__title h4[data-color="white"], .page__title--md[data-color="white"], .page__title h3[data-color="white"], .page__title--lg[data-color="white"], .page__title h2[data-color="white"], .page__title--xl[data-color="white"], .page__title h1[data-color="white"], .page__text[data-color="white"], .page__text--xs[data-color="white"], .page__text--sm[data-color="white"], .page__text--md[data-color="white"], .page__text--lg[data-color="white"], .page__text--xl[data-color="white"], .page__href--xs[data-color="white"], .page__href--sm[data-color="white"], .page__href--md[data-color="white"], .page__href--lg[data-color="white"], .page__href--xl[data-color="white"] {
+  color: #ffffff; }
+
+a[data-color="red"], p[data-color="red"], span[data-color="red"], input[data-color="red"], .page__title[data-color="red"], .page__title--xs[data-color="red"], .page__title h5[data-color="red"], .page__title--sm[data-color="red"], .page__title h4[data-color="red"], .page__title--md[data-color="red"], .page__title h3[data-color="red"], .page__title--lg[data-color="red"], .page__title h2[data-color="red"], .page__title--xl[data-color="red"], .page__title h1[data-color="red"], .page__text[data-color="red"], .page__text--xs[data-color="red"], .page__text--sm[data-color="red"], .page__text--md[data-color="red"], .page__text--lg[data-color="red"], .page__text--xl[data-color="red"], .page__href--xs[data-color="red"], .page__href--sm[data-color="red"], .page__href--md[data-color="red"], .page__href--lg[data-color="red"], .page__href--xl[data-color="red"] {
+  color: #e50000; }
+
+a[data-color="gray"], p[data-color="gray"], span[data-color="gray"], input[data-color="gray"], .page__title[data-color="gray"], .page__title--xs[data-color="gray"], .page__title h5[data-color="gray"], .page__title--sm[data-color="gray"], .page__title h4[data-color="gray"], .page__title--md[data-color="gray"], .page__title h3[data-color="gray"], .page__title--lg[data-color="gray"], .page__title h2[data-color="gray"], .page__title--xl[data-color="gray"], .page__title h1[data-color="gray"], .page__text[data-color="gray"], .page__text--xs[data-color="gray"], .page__text--sm[data-color="gray"], .page__text--md[data-color="gray"], .page__text--lg[data-color="gray"], .page__text--xl[data-color="gray"], .page__href--xs[data-color="gray"], .page__href--sm[data-color="gray"], .page__href--md[data-color="gray"], .page__href--lg[data-color="gray"], .page__href--xl[data-color="gray"] {
+  color: #2a2a2a; }
+
+a[data-custom-size="10"], p[data-custom-size="10"], span[data-custom-size="10"], input[data-custom-size="10"], .page__title[data-custom-size="10"], .page__title--xs[data-custom-size="10"], .page__title h5[data-custom-size="10"], .page__title--sm[data-custom-size="10"], .page__title h4[data-custom-size="10"], .page__title--md[data-custom-size="10"], .page__title h3[data-custom-size="10"], .page__title--lg[data-custom-size="10"], .page__title h2[data-custom-size="10"], .page__title--xl[data-custom-size="10"], .page__title h1[data-custom-size="10"], .page__text[data-custom-size="10"], .page__text--xs[data-custom-size="10"], .page__text--sm[data-custom-size="10"], .page__text--md[data-custom-size="10"], .page__text--lg[data-custom-size="10"], .page__text--xl[data-custom-size="10"], .page__href--xs[data-custom-size="10"], .page__href--sm[data-custom-size="10"], .page__href--md[data-custom-size="10"], .page__href--lg[data-custom-size="10"], .page__href--xl[data-custom-size="10"] {
+  font-size: 10px; }
+
+a[data-custom-size="11"], p[data-custom-size="11"], span[data-custom-size="11"], input[data-custom-size="11"], .page__title[data-custom-size="11"], .page__title--xs[data-custom-size="11"], .page__title h5[data-custom-size="11"], .page__title--sm[data-custom-size="11"], .page__title h4[data-custom-size="11"], .page__title--md[data-custom-size="11"], .page__title h3[data-custom-size="11"], .page__title--lg[data-custom-size="11"], .page__title h2[data-custom-size="11"], .page__title--xl[data-custom-size="11"], .page__title h1[data-custom-size="11"], .page__text[data-custom-size="11"], .page__text--xs[data-custom-size="11"], .page__text--sm[data-custom-size="11"], .page__text--md[data-custom-size="11"], .page__text--lg[data-custom-size="11"], .page__text--xl[data-custom-size="11"], .page__href--xs[data-custom-size="11"], .page__href--sm[data-custom-size="11"], .page__href--md[data-custom-size="11"], .page__href--lg[data-custom-size="11"], .page__href--xl[data-custom-size="11"] {
+  font-size: 11px; }
+
+a[data-custom-size="12"], p[data-custom-size="12"], span[data-custom-size="12"], input[data-custom-size="12"], .page__title[data-custom-size="12"], .page__title--xs[data-custom-size="12"], .page__title h5[data-custom-size="12"], .page__title--sm[data-custom-size="12"], .page__title h4[data-custom-size="12"], .page__title--md[data-custom-size="12"], .page__title h3[data-custom-size="12"], .page__title--lg[data-custom-size="12"], .page__title h2[data-custom-size="12"], .page__title--xl[data-custom-size="12"], .page__title h1[data-custom-size="12"], .page__text[data-custom-size="12"], .page__text--xs[data-custom-size="12"], .page__text--sm[data-custom-size="12"], .page__text--md[data-custom-size="12"], .page__text--lg[data-custom-size="12"], .page__text--xl[data-custom-size="12"], .page__href--xs[data-custom-size="12"], .page__href--sm[data-custom-size="12"], .page__href--md[data-custom-size="12"], .page__href--lg[data-custom-size="12"], .page__href--xl[data-custom-size="12"] {
+  font-size: 12px; }
+
+a[data-custom-size="13"], p[data-custom-size="13"], span[data-custom-size="13"], input[data-custom-size="13"], .page__title[data-custom-size="13"], .page__title--xs[data-custom-size="13"], .page__title h5[data-custom-size="13"], .page__title--sm[data-custom-size="13"], .page__title h4[data-custom-size="13"], .page__title--md[data-custom-size="13"], .page__title h3[data-custom-size="13"], .page__title--lg[data-custom-size="13"], .page__title h2[data-custom-size="13"], .page__title--xl[data-custom-size="13"], .page__title h1[data-custom-size="13"], .page__text[data-custom-size="13"], .page__text--xs[data-custom-size="13"], .page__text--sm[data-custom-size="13"], .page__text--md[data-custom-size="13"], .page__text--lg[data-custom-size="13"], .page__text--xl[data-custom-size="13"], .page__href--xs[data-custom-size="13"], .page__href--sm[data-custom-size="13"], .page__href--md[data-custom-size="13"], .page__href--lg[data-custom-size="13"], .page__href--xl[data-custom-size="13"] {
+  font-size: 13px; }
+
+a[data-custom-size="14"], p[data-custom-size="14"], span[data-custom-size="14"], input[data-custom-size="14"], .page__title[data-custom-size="14"], .page__title--xs[data-custom-size="14"], .page__title h5[data-custom-size="14"], .page__title--sm[data-custom-size="14"], .page__title h4[data-custom-size="14"], .page__title--md[data-custom-size="14"], .page__title h3[data-custom-size="14"], .page__title--lg[data-custom-size="14"], .page__title h2[data-custom-size="14"], .page__title--xl[data-custom-size="14"], .page__title h1[data-custom-size="14"], .page__text[data-custom-size="14"], .page__text--xs[data-custom-size="14"], .page__text--sm[data-custom-size="14"], .page__text--md[data-custom-size="14"], .page__text--lg[data-custom-size="14"], .page__text--xl[data-custom-size="14"], .page__href--xs[data-custom-size="14"], .page__href--sm[data-custom-size="14"], .page__href--md[data-custom-size="14"], .page__href--lg[data-custom-size="14"], .page__href--xl[data-custom-size="14"] {
+  font-size: 14px; }
+
+a[data-custom-size="15"], p[data-custom-size="15"], span[data-custom-size="15"], input[data-custom-size="15"], .page__title[data-custom-size="15"], .page__title--xs[data-custom-size="15"], .page__title h5[data-custom-size="15"], .page__title--sm[data-custom-size="15"], .page__title h4[data-custom-size="15"], .page__title--md[data-custom-size="15"], .page__title h3[data-custom-size="15"], .page__title--lg[data-custom-size="15"], .page__title h2[data-custom-size="15"], .page__title--xl[data-custom-size="15"], .page__title h1[data-custom-size="15"], .page__text[data-custom-size="15"], .page__text--xs[data-custom-size="15"], .page__text--sm[data-custom-size="15"], .page__text--md[data-custom-size="15"], .page__text--lg[data-custom-size="15"], .page__text--xl[data-custom-size="15"], .page__href--xs[data-custom-size="15"], .page__href--sm[data-custom-size="15"], .page__href--md[data-custom-size="15"], .page__href--lg[data-custom-size="15"], .page__href--xl[data-custom-size="15"] {
+  font-size: 15px; }
+
+a[data-custom-size="16"], p[data-custom-size="16"], span[data-custom-size="16"], input[data-custom-size="16"], .page__title[data-custom-size="16"], .page__title--xs[data-custom-size="16"], .page__title h5[data-custom-size="16"], .page__title--sm[data-custom-size="16"], .page__title h4[data-custom-size="16"], .page__title--md[data-custom-size="16"], .page__title h3[data-custom-size="16"], .page__title--lg[data-custom-size="16"], .page__title h2[data-custom-size="16"], .page__title--xl[data-custom-size="16"], .page__title h1[data-custom-size="16"], .page__text[data-custom-size="16"], .page__text--xs[data-custom-size="16"], .page__text--sm[data-custom-size="16"], .page__text--md[data-custom-size="16"], .page__text--lg[data-custom-size="16"], .page__text--xl[data-custom-size="16"], .page__href--xs[data-custom-size="16"], .page__href--sm[data-custom-size="16"], .page__href--md[data-custom-size="16"], .page__href--lg[data-custom-size="16"], .page__href--xl[data-custom-size="16"] {
+  font-size: 16px; }
+
+a[data-custom-size="17"], p[data-custom-size="17"], span[data-custom-size="17"], input[data-custom-size="17"], .page__title[data-custom-size="17"], .page__title--xs[data-custom-size="17"], .page__title h5[data-custom-size="17"], .page__title--sm[data-custom-size="17"], .page__title h4[data-custom-size="17"], .page__title--md[data-custom-size="17"], .page__title h3[data-custom-size="17"], .page__title--lg[data-custom-size="17"], .page__title h2[data-custom-size="17"], .page__title--xl[data-custom-size="17"], .page__title h1[data-custom-size="17"], .page__text[data-custom-size="17"], .page__text--xs[data-custom-size="17"], .page__text--sm[data-custom-size="17"], .page__text--md[data-custom-size="17"], .page__text--lg[data-custom-size="17"], .page__text--xl[data-custom-size="17"], .page__href--xs[data-custom-size="17"], .page__href--sm[data-custom-size="17"], .page__href--md[data-custom-size="17"], .page__href--lg[data-custom-size="17"], .page__href--xl[data-custom-size="17"] {
+  font-size: 17px; }
+
+a[data-custom-size="18"], p[data-custom-size="18"], span[data-custom-size="18"], input[data-custom-size="18"], .page__title[data-custom-size="18"], .page__title--xs[data-custom-size="18"], .page__title h5[data-custom-size="18"], .page__title--sm[data-custom-size="18"], .page__title h4[data-custom-size="18"], .page__title--md[data-custom-size="18"], .page__title h3[data-custom-size="18"], .page__title--lg[data-custom-size="18"], .page__title h2[data-custom-size="18"], .page__title--xl[data-custom-size="18"], .page__title h1[data-custom-size="18"], .page__text[data-custom-size="18"], .page__text--xs[data-custom-size="18"], .page__text--sm[data-custom-size="18"], .page__text--md[data-custom-size="18"], .page__text--lg[data-custom-size="18"], .page__text--xl[data-custom-size="18"], .page__href--xs[data-custom-size="18"], .page__href--sm[data-custom-size="18"], .page__href--md[data-custom-size="18"], .page__href--lg[data-custom-size="18"], .page__href--xl[data-custom-size="18"] {
+  font-size: 18px; }
+
+a[data-custom-size="19"], p[data-custom-size="19"], span[data-custom-size="19"], input[data-custom-size="19"], .page__title[data-custom-size="19"], .page__title--xs[data-custom-size="19"], .page__title h5[data-custom-size="19"], .page__title--sm[data-custom-size="19"], .page__title h4[data-custom-size="19"], .page__title--md[data-custom-size="19"], .page__title h3[data-custom-size="19"], .page__title--lg[data-custom-size="19"], .page__title h2[data-custom-size="19"], .page__title--xl[data-custom-size="19"], .page__title h1[data-custom-size="19"], .page__text[data-custom-size="19"], .page__text--xs[data-custom-size="19"], .page__text--sm[data-custom-size="19"], .page__text--md[data-custom-size="19"], .page__text--lg[data-custom-size="19"], .page__text--xl[data-custom-size="19"], .page__href--xs[data-custom-size="19"], .page__href--sm[data-custom-size="19"], .page__href--md[data-custom-size="19"], .page__href--lg[data-custom-size="19"], .page__href--xl[data-custom-size="19"] {
+  font-size: 19px; }
+
+a[data-custom-size="20"], p[data-custom-size="20"], span[data-custom-size="20"], input[data-custom-size="20"], .page__title[data-custom-size="20"], .page__title--xs[data-custom-size="20"], .page__title h5[data-custom-size="20"], .page__title--sm[data-custom-size="20"], .page__title h4[data-custom-size="20"], .page__title--md[data-custom-size="20"], .page__title h3[data-custom-size="20"], .page__title--lg[data-custom-size="20"], .page__title h2[data-custom-size="20"], .page__title--xl[data-custom-size="20"], .page__title h1[data-custom-size="20"], .page__text[data-custom-size="20"], .page__text--xs[data-custom-size="20"], .page__text--sm[data-custom-size="20"], .page__text--md[data-custom-size="20"], .page__text--lg[data-custom-size="20"], .page__text--xl[data-custom-size="20"], .page__href--xs[data-custom-size="20"], .page__href--sm[data-custom-size="20"], .page__href--md[data-custom-size="20"], .page__href--lg[data-custom-size="20"], .page__href--xl[data-custom-size="20"] {
+  font-size: 20px; }
+
+a[data-custom-size="21"], p[data-custom-size="21"], span[data-custom-size="21"], input[data-custom-size="21"], .page__title[data-custom-size="21"], .page__title--xs[data-custom-size="21"], .page__title h5[data-custom-size="21"], .page__title--sm[data-custom-size="21"], .page__title h4[data-custom-size="21"], .page__title--md[data-custom-size="21"], .page__title h3[data-custom-size="21"], .page__title--lg[data-custom-size="21"], .page__title h2[data-custom-size="21"], .page__title--xl[data-custom-size="21"], .page__title h1[data-custom-size="21"], .page__text[data-custom-size="21"], .page__text--xs[data-custom-size="21"], .page__text--sm[data-custom-size="21"], .page__text--md[data-custom-size="21"], .page__text--lg[data-custom-size="21"], .page__text--xl[data-custom-size="21"], .page__href--xs[data-custom-size="21"], .page__href--sm[data-custom-size="21"], .page__href--md[data-custom-size="21"], .page__href--lg[data-custom-size="21"], .page__href--xl[data-custom-size="21"] {
+  font-size: 21px; }
+
+a[data-custom-size="22"], p[data-custom-size="22"], span[data-custom-size="22"], input[data-custom-size="22"], .page__title[data-custom-size="22"], .page__title--xs[data-custom-size="22"], .page__title h5[data-custom-size="22"], .page__title--sm[data-custom-size="22"], .page__title h4[data-custom-size="22"], .page__title--md[data-custom-size="22"], .page__title h3[data-custom-size="22"], .page__title--lg[data-custom-size="22"], .page__title h2[data-custom-size="22"], .page__title--xl[data-custom-size="22"], .page__title h1[data-custom-size="22"], .page__text[data-custom-size="22"], .page__text--xs[data-custom-size="22"], .page__text--sm[data-custom-size="22"], .page__text--md[data-custom-size="22"], .page__text--lg[data-custom-size="22"], .page__text--xl[data-custom-size="22"], .page__href--xs[data-custom-size="22"], .page__href--sm[data-custom-size="22"], .page__href--md[data-custom-size="22"], .page__href--lg[data-custom-size="22"], .page__href--xl[data-custom-size="22"] {
+  font-size: 22px; }
+
+a[data-custom-size="23"], p[data-custom-size="23"], span[data-custom-size="23"], input[data-custom-size="23"], .page__title[data-custom-size="23"], .page__title--xs[data-custom-size="23"], .page__title h5[data-custom-size="23"], .page__title--sm[data-custom-size="23"], .page__title h4[data-custom-size="23"], .page__title--md[data-custom-size="23"], .page__title h3[data-custom-size="23"], .page__title--lg[data-custom-size="23"], .page__title h2[data-custom-size="23"], .page__title--xl[data-custom-size="23"], .page__title h1[data-custom-size="23"], .page__text[data-custom-size="23"], .page__text--xs[data-custom-size="23"], .page__text--sm[data-custom-size="23"], .page__text--md[data-custom-size="23"], .page__text--lg[data-custom-size="23"], .page__text--xl[data-custom-size="23"], .page__href--xs[data-custom-size="23"], .page__href--sm[data-custom-size="23"], .page__href--md[data-custom-size="23"], .page__href--lg[data-custom-size="23"], .page__href--xl[data-custom-size="23"] {
+  font-size: 23px; }
+
+a[data-custom-size="24"], p[data-custom-size="24"], span[data-custom-size="24"], input[data-custom-size="24"], .page__title[data-custom-size="24"], .page__title--xs[data-custom-size="24"], .page__title h5[data-custom-size="24"], .page__title--sm[data-custom-size="24"], .page__title h4[data-custom-size="24"], .page__title--md[data-custom-size="24"], .page__title h3[data-custom-size="24"], .page__title--lg[data-custom-size="24"], .page__title h2[data-custom-size="24"], .page__title--xl[data-custom-size="24"], .page__title h1[data-custom-size="24"], .page__text[data-custom-size="24"], .page__text--xs[data-custom-size="24"], .page__text--sm[data-custom-size="24"], .page__text--md[data-custom-size="24"], .page__text--lg[data-custom-size="24"], .page__text--xl[data-custom-size="24"], .page__href--xs[data-custom-size="24"], .page__href--sm[data-custom-size="24"], .page__href--md[data-custom-size="24"], .page__href--lg[data-custom-size="24"], .page__href--xl[data-custom-size="24"] {
+  font-size: 24px; }
+
+a[data-custom-size="25"], p[data-custom-size="25"], span[data-custom-size="25"], input[data-custom-size="25"], .page__title[data-custom-size="25"], .page__title--xs[data-custom-size="25"], .page__title h5[data-custom-size="25"], .page__title--sm[data-custom-size="25"], .page__title h4[data-custom-size="25"], .page__title--md[data-custom-size="25"], .page__title h3[data-custom-size="25"], .page__title--lg[data-custom-size="25"], .page__title h2[data-custom-size="25"], .page__title--xl[data-custom-size="25"], .page__title h1[data-custom-size="25"], .page__text[data-custom-size="25"], .page__text--xs[data-custom-size="25"], .page__text--sm[data-custom-size="25"], .page__text--md[data-custom-size="25"], .page__text--lg[data-custom-size="25"], .page__text--xl[data-custom-size="25"], .page__href--xs[data-custom-size="25"], .page__href--sm[data-custom-size="25"], .page__href--md[data-custom-size="25"], .page__href--lg[data-custom-size="25"], .page__href--xl[data-custom-size="25"] {
+  font-size: 25px; }
+
+a[data-custom-size="26"], p[data-custom-size="26"], span[data-custom-size="26"], input[data-custom-size="26"], .page__title[data-custom-size="26"], .page__title--xs[data-custom-size="26"], .page__title h5[data-custom-size="26"], .page__title--sm[data-custom-size="26"], .page__title h4[data-custom-size="26"], .page__title--md[data-custom-size="26"], .page__title h3[data-custom-size="26"], .page__title--lg[data-custom-size="26"], .page__title h2[data-custom-size="26"], .page__title--xl[data-custom-size="26"], .page__title h1[data-custom-size="26"], .page__text[data-custom-size="26"], .page__text--xs[data-custom-size="26"], .page__text--sm[data-custom-size="26"], .page__text--md[data-custom-size="26"], .page__text--lg[data-custom-size="26"], .page__text--xl[data-custom-size="26"], .page__href--xs[data-custom-size="26"], .page__href--sm[data-custom-size="26"], .page__href--md[data-custom-size="26"], .page__href--lg[data-custom-size="26"], .page__href--xl[data-custom-size="26"] {
+  font-size: 26px; }
+
+a[data-custom-size="27"], p[data-custom-size="27"], span[data-custom-size="27"], input[data-custom-size="27"], .page__title[data-custom-size="27"], .page__title--xs[data-custom-size="27"], .page__title h5[data-custom-size="27"], .page__title--sm[data-custom-size="27"], .page__title h4[data-custom-size="27"], .page__title--md[data-custom-size="27"], .page__title h3[data-custom-size="27"], .page__title--lg[data-custom-size="27"], .page__title h2[data-custom-size="27"], .page__title--xl[data-custom-size="27"], .page__title h1[data-custom-size="27"], .page__text[data-custom-size="27"], .page__text--xs[data-custom-size="27"], .page__text--sm[data-custom-size="27"], .page__text--md[data-custom-size="27"], .page__text--lg[data-custom-size="27"], .page__text--xl[data-custom-size="27"], .page__href--xs[data-custom-size="27"], .page__href--sm[data-custom-size="27"], .page__href--md[data-custom-size="27"], .page__href--lg[data-custom-size="27"], .page__href--xl[data-custom-size="27"] {
+  font-size: 27px; }
+
+a[data-custom-size="28"], p[data-custom-size="28"], span[data-custom-size="28"], input[data-custom-size="28"], .page__title[data-custom-size="28"], .page__title--xs[data-custom-size="28"], .page__title h5[data-custom-size="28"], .page__title--sm[data-custom-size="28"], .page__title h4[data-custom-size="28"], .page__title--md[data-custom-size="28"], .page__title h3[data-custom-size="28"], .page__title--lg[data-custom-size="28"], .page__title h2[data-custom-size="28"], .page__title--xl[data-custom-size="28"], .page__title h1[data-custom-size="28"], .page__text[data-custom-size="28"], .page__text--xs[data-custom-size="28"], .page__text--sm[data-custom-size="28"], .page__text--md[data-custom-size="28"], .page__text--lg[data-custom-size="28"], .page__text--xl[data-custom-size="28"], .page__href--xs[data-custom-size="28"], .page__href--sm[data-custom-size="28"], .page__href--md[data-custom-size="28"], .page__href--lg[data-custom-size="28"], .page__href--xl[data-custom-size="28"] {
+  font-size: 28px; }
+
+a[data-custom-size="29"], p[data-custom-size="29"], span[data-custom-size="29"], input[data-custom-size="29"], .page__title[data-custom-size="29"], .page__title--xs[data-custom-size="29"], .page__title h5[data-custom-size="29"], .page__title--sm[data-custom-size="29"], .page__title h4[data-custom-size="29"], .page__title--md[data-custom-size="29"], .page__title h3[data-custom-size="29"], .page__title--lg[data-custom-size="29"], .page__title h2[data-custom-size="29"], .page__title--xl[data-custom-size="29"], .page__title h1[data-custom-size="29"], .page__text[data-custom-size="29"], .page__text--xs[data-custom-size="29"], .page__text--sm[data-custom-size="29"], .page__text--md[data-custom-size="29"], .page__text--lg[data-custom-size="29"], .page__text--xl[data-custom-size="29"], .page__href--xs[data-custom-size="29"], .page__href--sm[data-custom-size="29"], .page__href--md[data-custom-size="29"], .page__href--lg[data-custom-size="29"], .page__href--xl[data-custom-size="29"] {
+  font-size: 29px; }
+
+a[data-custom-size="30"], p[data-custom-size="30"], span[data-custom-size="30"], input[data-custom-size="30"], .page__title[data-custom-size="30"], .page__title--xs[data-custom-size="30"], .page__title h5[data-custom-size="30"], .page__title--sm[data-custom-size="30"], .page__title h4[data-custom-size="30"], .page__title--md[data-custom-size="30"], .page__title h3[data-custom-size="30"], .page__title--lg[data-custom-size="30"], .page__title h2[data-custom-size="30"], .page__title--xl[data-custom-size="30"], .page__title h1[data-custom-size="30"], .page__text[data-custom-size="30"], .page__text--xs[data-custom-size="30"], .page__text--sm[data-custom-size="30"], .page__text--md[data-custom-size="30"], .page__text--lg[data-custom-size="30"], .page__text--xl[data-custom-size="30"], .page__href--xs[data-custom-size="30"], .page__href--sm[data-custom-size="30"], .page__href--md[data-custom-size="30"], .page__href--lg[data-custom-size="30"], .page__href--xl[data-custom-size="30"] {
+  font-size: 30px; }
+
+a[data-custom-size="31"], p[data-custom-size="31"], span[data-custom-size="31"], input[data-custom-size="31"], .page__title[data-custom-size="31"], .page__title--xs[data-custom-size="31"], .page__title h5[data-custom-size="31"], .page__title--sm[data-custom-size="31"], .page__title h4[data-custom-size="31"], .page__title--md[data-custom-size="31"], .page__title h3[data-custom-size="31"], .page__title--lg[data-custom-size="31"], .page__title h2[data-custom-size="31"], .page__title--xl[data-custom-size="31"], .page__title h1[data-custom-size="31"], .page__text[data-custom-size="31"], .page__text--xs[data-custom-size="31"], .page__text--sm[data-custom-size="31"], .page__text--md[data-custom-size="31"], .page__text--lg[data-custom-size="31"], .page__text--xl[data-custom-size="31"], .page__href--xs[data-custom-size="31"], .page__href--sm[data-custom-size="31"], .page__href--md[data-custom-size="31"], .page__href--lg[data-custom-size="31"], .page__href--xl[data-custom-size="31"] {
+  font-size: 31px; }
+
+a[data-custom-size="32"], p[data-custom-size="32"], span[data-custom-size="32"], input[data-custom-size="32"], .page__title[data-custom-size="32"], .page__title--xs[data-custom-size="32"], .page__title h5[data-custom-size="32"], .page__title--sm[data-custom-size="32"], .page__title h4[data-custom-size="32"], .page__title--md[data-custom-size="32"], .page__title h3[data-custom-size="32"], .page__title--lg[data-custom-size="32"], .page__title h2[data-custom-size="32"], .page__title--xl[data-custom-size="32"], .page__title h1[data-custom-size="32"], .page__text[data-custom-size="32"], .page__text--xs[data-custom-size="32"], .page__text--sm[data-custom-size="32"], .page__text--md[data-custom-size="32"], .page__text--lg[data-custom-size="32"], .page__text--xl[data-custom-size="32"], .page__href--xs[data-custom-size="32"], .page__href--sm[data-custom-size="32"], .page__href--md[data-custom-size="32"], .page__href--lg[data-custom-size="32"], .page__href--xl[data-custom-size="32"] {
+  font-size: 32px; }
+
+a[data-custom-size="33"], p[data-custom-size="33"], span[data-custom-size="33"], input[data-custom-size="33"], .page__title[data-custom-size="33"], .page__title--xs[data-custom-size="33"], .page__title h5[data-custom-size="33"], .page__title--sm[data-custom-size="33"], .page__title h4[data-custom-size="33"], .page__title--md[data-custom-size="33"], .page__title h3[data-custom-size="33"], .page__title--lg[data-custom-size="33"], .page__title h2[data-custom-size="33"], .page__title--xl[data-custom-size="33"], .page__title h1[data-custom-size="33"], .page__text[data-custom-size="33"], .page__text--xs[data-custom-size="33"], .page__text--sm[data-custom-size="33"], .page__text--md[data-custom-size="33"], .page__text--lg[data-custom-size="33"], .page__text--xl[data-custom-size="33"], .page__href--xs[data-custom-size="33"], .page__href--sm[data-custom-size="33"], .page__href--md[data-custom-size="33"], .page__href--lg[data-custom-size="33"], .page__href--xl[data-custom-size="33"] {
+  font-size: 33px; }
+
+a[data-custom-size="34"], p[data-custom-size="34"], span[data-custom-size="34"], input[data-custom-size="34"], .page__title[data-custom-size="34"], .page__title--xs[data-custom-size="34"], .page__title h5[data-custom-size="34"], .page__title--sm[data-custom-size="34"], .page__title h4[data-custom-size="34"], .page__title--md[data-custom-size="34"], .page__title h3[data-custom-size="34"], .page__title--lg[data-custom-size="34"], .page__title h2[data-custom-size="34"], .page__title--xl[data-custom-size="34"], .page__title h1[data-custom-size="34"], .page__text[data-custom-size="34"], .page__text--xs[data-custom-size="34"], .page__text--sm[data-custom-size="34"], .page__text--md[data-custom-size="34"], .page__text--lg[data-custom-size="34"], .page__text--xl[data-custom-size="34"], .page__href--xs[data-custom-size="34"], .page__href--sm[data-custom-size="34"], .page__href--md[data-custom-size="34"], .page__href--lg[data-custom-size="34"], .page__href--xl[data-custom-size="34"] {
+  font-size: 34px; }
+
+a[data-custom-size="35"], p[data-custom-size="35"], span[data-custom-size="35"], input[data-custom-size="35"], .page__title[data-custom-size="35"], .page__title--xs[data-custom-size="35"], .page__title h5[data-custom-size="35"], .page__title--sm[data-custom-size="35"], .page__title h4[data-custom-size="35"], .page__title--md[data-custom-size="35"], .page__title h3[data-custom-size="35"], .page__title--lg[data-custom-size="35"], .page__title h2[data-custom-size="35"], .page__title--xl[data-custom-size="35"], .page__title h1[data-custom-size="35"], .page__text[data-custom-size="35"], .page__text--xs[data-custom-size="35"], .page__text--sm[data-custom-size="35"], .page__text--md[data-custom-size="35"], .page__text--lg[data-custom-size="35"], .page__text--xl[data-custom-size="35"], .page__href--xs[data-custom-size="35"], .page__href--sm[data-custom-size="35"], .page__href--md[data-custom-size="35"], .page__href--lg[data-custom-size="35"], .page__href--xl[data-custom-size="35"] {
+  font-size: 35px; }
+
+a[data-custom-size="36"], p[data-custom-size="36"], span[data-custom-size="36"], input[data-custom-size="36"], .page__title[data-custom-size="36"], .page__title--xs[data-custom-size="36"], .page__title h5[data-custom-size="36"], .page__title--sm[data-custom-size="36"], .page__title h4[data-custom-size="36"], .page__title--md[data-custom-size="36"], .page__title h3[data-custom-size="36"], .page__title--lg[data-custom-size="36"], .page__title h2[data-custom-size="36"], .page__title--xl[data-custom-size="36"], .page__title h1[data-custom-size="36"], .page__text[data-custom-size="36"], .page__text--xs[data-custom-size="36"], .page__text--sm[data-custom-size="36"], .page__text--md[data-custom-size="36"], .page__text--lg[data-custom-size="36"], .page__text--xl[data-custom-size="36"], .page__href--xs[data-custom-size="36"], .page__href--sm[data-custom-size="36"], .page__href--md[data-custom-size="36"], .page__href--lg[data-custom-size="36"], .page__href--xl[data-custom-size="36"] {
+  font-size: 36px; }
+
+a[data-custom-size="37"], p[data-custom-size="37"], span[data-custom-size="37"], input[data-custom-size="37"], .page__title[data-custom-size="37"], .page__title--xs[data-custom-size="37"], .page__title h5[data-custom-size="37"], .page__title--sm[data-custom-size="37"], .page__title h4[data-custom-size="37"], .page__title--md[data-custom-size="37"], .page__title h3[data-custom-size="37"], .page__title--lg[data-custom-size="37"], .page__title h2[data-custom-size="37"], .page__title--xl[data-custom-size="37"], .page__title h1[data-custom-size="37"], .page__text[data-custom-size="37"], .page__text--xs[data-custom-size="37"], .page__text--sm[data-custom-size="37"], .page__text--md[data-custom-size="37"], .page__text--lg[data-custom-size="37"], .page__text--xl[data-custom-size="37"], .page__href--xs[data-custom-size="37"], .page__href--sm[data-custom-size="37"], .page__href--md[data-custom-size="37"], .page__href--lg[data-custom-size="37"], .page__href--xl[data-custom-size="37"] {
+  font-size: 37px; }
+
+a[data-custom-size="38"], p[data-custom-size="38"], span[data-custom-size="38"], input[data-custom-size="38"], .page__title[data-custom-size="38"], .page__title--xs[data-custom-size="38"], .page__title h5[data-custom-size="38"], .page__title--sm[data-custom-size="38"], .page__title h4[data-custom-size="38"], .page__title--md[data-custom-size="38"], .page__title h3[data-custom-size="38"], .page__title--lg[data-custom-size="38"], .page__title h2[data-custom-size="38"], .page__title--xl[data-custom-size="38"], .page__title h1[data-custom-size="38"], .page__text[data-custom-size="38"], .page__text--xs[data-custom-size="38"], .page__text--sm[data-custom-size="38"], .page__text--md[data-custom-size="38"], .page__text--lg[data-custom-size="38"], .page__text--xl[data-custom-size="38"], .page__href--xs[data-custom-size="38"], .page__href--sm[data-custom-size="38"], .page__href--md[data-custom-size="38"], .page__href--lg[data-custom-size="38"], .page__href--xl[data-custom-size="38"] {
+  font-size: 38px; }
+
+a[data-custom-size="39"], p[data-custom-size="39"], span[data-custom-size="39"], input[data-custom-size="39"], .page__title[data-custom-size="39"], .page__title--xs[data-custom-size="39"], .page__title h5[data-custom-size="39"], .page__title--sm[data-custom-size="39"], .page__title h4[data-custom-size="39"], .page__title--md[data-custom-size="39"], .page__title h3[data-custom-size="39"], .page__title--lg[data-custom-size="39"], .page__title h2[data-custom-size="39"], .page__title--xl[data-custom-size="39"], .page__title h1[data-custom-size="39"], .page__text[data-custom-size="39"], .page__text--xs[data-custom-size="39"], .page__text--sm[data-custom-size="39"], .page__text--md[data-custom-size="39"], .page__text--lg[data-custom-size="39"], .page__text--xl[data-custom-size="39"], .page__href--xs[data-custom-size="39"], .page__href--sm[data-custom-size="39"], .page__href--md[data-custom-size="39"], .page__href--lg[data-custom-size="39"], .page__href--xl[data-custom-size="39"] {
+  font-size: 39px; }
+
+a[data-custom-size="40"], p[data-custom-size="40"], span[data-custom-size="40"], input[data-custom-size="40"], .page__title[data-custom-size="40"], .page__title--xs[data-custom-size="40"], .page__title h5[data-custom-size="40"], .page__title--sm[data-custom-size="40"], .page__title h4[data-custom-size="40"], .page__title--md[data-custom-size="40"], .page__title h3[data-custom-size="40"], .page__title--lg[data-custom-size="40"], .page__title h2[data-custom-size="40"], .page__title--xl[data-custom-size="40"], .page__title h1[data-custom-size="40"], .page__text[data-custom-size="40"], .page__text--xs[data-custom-size="40"], .page__text--sm[data-custom-size="40"], .page__text--md[data-custom-size="40"], .page__text--lg[data-custom-size="40"], .page__text--xl[data-custom-size="40"], .page__href--xs[data-custom-size="40"], .page__href--sm[data-custom-size="40"], .page__href--md[data-custom-size="40"], .page__href--lg[data-custom-size="40"], .page__href--xl[data-custom-size="40"] {
+  font-size: 40px; }
+
+a[data-custom-weight="100"], p[data-custom-weight="100"], span[data-custom-weight="100"], input[data-custom-weight="100"], .page__title[data-custom-weight="100"], .page__title--xs[data-custom-weight="100"], .page__title h5[data-custom-weight="100"], .page__title--sm[data-custom-weight="100"], .page__title h4[data-custom-weight="100"], .page__title--md[data-custom-weight="100"], .page__title h3[data-custom-weight="100"], .page__title--lg[data-custom-weight="100"], .page__title h2[data-custom-weight="100"], .page__title--xl[data-custom-weight="100"], .page__title h1[data-custom-weight="100"], .page__text[data-custom-weight="100"], .page__text--xs[data-custom-weight="100"], .page__text--sm[data-custom-weight="100"], .page__text--md[data-custom-weight="100"], .page__text--lg[data-custom-weight="100"], .page__text--xl[data-custom-weight="100"] {
+  font-weight: 100; }
+
+a[data-custom-weight="200"], p[data-custom-weight="200"], span[data-custom-weight="200"], input[data-custom-weight="200"], .page__title[data-custom-weight="200"], .page__title--xs[data-custom-weight="200"], .page__title h5[data-custom-weight="200"], .page__title--sm[data-custom-weight="200"], .page__title h4[data-custom-weight="200"], .page__title--md[data-custom-weight="200"], .page__title h3[data-custom-weight="200"], .page__title--lg[data-custom-weight="200"], .page__title h2[data-custom-weight="200"], .page__title--xl[data-custom-weight="200"], .page__title h1[data-custom-weight="200"], .page__text[data-custom-weight="200"], .page__text--xs[data-custom-weight="200"], .page__text--sm[data-custom-weight="200"], .page__text--md[data-custom-weight="200"], .page__text--lg[data-custom-weight="200"], .page__text--xl[data-custom-weight="200"] {
+  font-weight: 200; }
+
+a[data-custom-weight="300"], p[data-custom-weight="300"], span[data-custom-weight="300"], input[data-custom-weight="300"], .page__title[data-custom-weight="300"], .page__title--xs[data-custom-weight="300"], .page__title h5[data-custom-weight="300"], .page__title--sm[data-custom-weight="300"], .page__title h4[data-custom-weight="300"], .page__title--md[data-custom-weight="300"], .page__title h3[data-custom-weight="300"], .page__title--lg[data-custom-weight="300"], .page__title h2[data-custom-weight="300"], .page__title--xl[data-custom-weight="300"], .page__title h1[data-custom-weight="300"], .page__text[data-custom-weight="300"], .page__text--xs[data-custom-weight="300"], .page__text--sm[data-custom-weight="300"], .page__text--md[data-custom-weight="300"], .page__text--lg[data-custom-weight="300"], .page__text--xl[data-custom-weight="300"] {
+  font-weight: 300; }
+
+a[data-custom-weight="400"], p[data-custom-weight="400"], span[data-custom-weight="400"], input[data-custom-weight="400"], .page__title[data-custom-weight="400"], .page__title--xs[data-custom-weight="400"], .page__title h5[data-custom-weight="400"], .page__title--sm[data-custom-weight="400"], .page__title h4[data-custom-weight="400"], .page__title--md[data-custom-weight="400"], .page__title h3[data-custom-weight="400"], .page__title--lg[data-custom-weight="400"], .page__title h2[data-custom-weight="400"], .page__title--xl[data-custom-weight="400"], .page__title h1[data-custom-weight="400"], .page__text[data-custom-weight="400"], .page__text--xs[data-custom-weight="400"], .page__text--sm[data-custom-weight="400"], .page__text--md[data-custom-weight="400"], .page__text--lg[data-custom-weight="400"], .page__text--xl[data-custom-weight="400"] {
+  font-weight: 400; }
+
+a[data-custom-weight="500"], p[data-custom-weight="500"], span[data-custom-weight="500"], input[data-custom-weight="500"], .page__title[data-custom-weight="500"], .page__title--xs[data-custom-weight="500"], .page__title h5[data-custom-weight="500"], .page__title--sm[data-custom-weight="500"], .page__title h4[data-custom-weight="500"], .page__title--md[data-custom-weight="500"], .page__title h3[data-custom-weight="500"], .page__title--lg[data-custom-weight="500"], .page__title h2[data-custom-weight="500"], .page__title--xl[data-custom-weight="500"], .page__title h1[data-custom-weight="500"], .page__text[data-custom-weight="500"], .page__text--xs[data-custom-weight="500"], .page__text--sm[data-custom-weight="500"], .page__text--md[data-custom-weight="500"], .page__text--lg[data-custom-weight="500"], .page__text--xl[data-custom-weight="500"] {
+  font-weight: 500; }
+
+a[data-custom-weight="600"], p[data-custom-weight="600"], span[data-custom-weight="600"], input[data-custom-weight="600"], .page__title[data-custom-weight="600"], .page__title--xs[data-custom-weight="600"], .page__title h5[data-custom-weight="600"], .page__title--sm[data-custom-weight="600"], .page__title h4[data-custom-weight="600"], .page__title--md[data-custom-weight="600"], .page__title h3[data-custom-weight="600"], .page__title--lg[data-custom-weight="600"], .page__title h2[data-custom-weight="600"], .page__title--xl[data-custom-weight="600"], .page__title h1[data-custom-weight="600"], .page__text[data-custom-weight="600"], .page__text--xs[data-custom-weight="600"], .page__text--sm[data-custom-weight="600"], .page__text--md[data-custom-weight="600"], .page__text--lg[data-custom-weight="600"], .page__text--xl[data-custom-weight="600"] {
+  font-weight: 600; }
+
+a[data-custom-weight="700"], p[data-custom-weight="700"], span[data-custom-weight="700"], input[data-custom-weight="700"], .page__title[data-custom-weight="700"], .page__title--xs[data-custom-weight="700"], .page__title h5[data-custom-weight="700"], .page__title--sm[data-custom-weight="700"], .page__title h4[data-custom-weight="700"], .page__title--md[data-custom-weight="700"], .page__title h3[data-custom-weight="700"], .page__title--lg[data-custom-weight="700"], .page__title h2[data-custom-weight="700"], .page__title--xl[data-custom-weight="700"], .page__title h1[data-custom-weight="700"], .page__text[data-custom-weight="700"], .page__text--xs[data-custom-weight="700"], .page__text--sm[data-custom-weight="700"], .page__text--md[data-custom-weight="700"], .page__text--lg[data-custom-weight="700"], .page__text--xl[data-custom-weight="700"] {
+  font-weight: 700; }
+
+a[data-custom-weight="800"], p[data-custom-weight="800"], span[data-custom-weight="800"], input[data-custom-weight="800"], .page__title[data-custom-weight="800"], .page__title--xs[data-custom-weight="800"], .page__title h5[data-custom-weight="800"], .page__title--sm[data-custom-weight="800"], .page__title h4[data-custom-weight="800"], .page__title--md[data-custom-weight="800"], .page__title h3[data-custom-weight="800"], .page__title--lg[data-custom-weight="800"], .page__title h2[data-custom-weight="800"], .page__title--xl[data-custom-weight="800"], .page__title h1[data-custom-weight="800"], .page__text[data-custom-weight="800"], .page__text--xs[data-custom-weight="800"], .page__text--sm[data-custom-weight="800"], .page__text--md[data-custom-weight="800"], .page__text--lg[data-custom-weight="800"], .page__text--xl[data-custom-weight="800"] {
+  font-weight: 800; }
+
+a[data-custom-weight="900"], p[data-custom-weight="900"], span[data-custom-weight="900"], input[data-custom-weight="900"], .page__title[data-custom-weight="900"], .page__title--xs[data-custom-weight="900"], .page__title h5[data-custom-weight="900"], .page__title--sm[data-custom-weight="900"], .page__title h4[data-custom-weight="900"], .page__title--md[data-custom-weight="900"], .page__title h3[data-custom-weight="900"], .page__title--lg[data-custom-weight="900"], .page__title h2[data-custom-weight="900"], .page__title--xl[data-custom-weight="900"], .page__title h1[data-custom-weight="900"], .page__text[data-custom-weight="900"], .page__text--xs[data-custom-weight="900"], .page__text--sm[data-custom-weight="900"], .page__text--md[data-custom-weight="900"], .page__text--lg[data-custom-weight="900"], .page__text--xl[data-custom-weight="900"] {
+  font-weight: 900; }
+
+a, p, span, input {
+  font-family: "Open Sans", sans-serif; }
+
+.page__title {
+  margin-bottom: 20px; }
+  .page__title--xs, .page__title h5 {
+    font-size: 20px; }
+    .page__title--xs span, .page__title--xs p, .page__title--xs a, .page__title h5 span, .page__title h5 p, .page__title h5 a {
+      font-size: 20px; }
+  .page__title--sm, .page__title h4 {
+    font-size: 30px;
+    font-weight: 800; }
+    .page__title--sm span, .page__title--sm p, .page__title--sm a, .page__title h4 span, .page__title h4 p, .page__title h4 a {
+      font-size: 30px;
+      font-weight: 800; }
+  .page__title--md, .page__title h3 {
+    font-size: 40px;
+    font-weight: 600; }
+    .page__title--md span, .page__title--md p, .page__title--md a, .page__title h3 span, .page__title h3 p, .page__title h3 a {
+      font-size: 40px;
+      font-weight: 600; }
+  .page__title--lg, .page__title h2 {
+    font-size: 50px; }
+    .page__title--lg span, .page__title--lg p, .page__title--lg a, .page__title h2 span, .page__title h2 p, .page__title h2 a {
+      font-size: 50px; }
+  .page__title--xl, .page__title h1 {
+    font-weight: 800;
+    font-size: 60px; }
+    .page__title--xl span, .page__title--xl p, .page__title--xl a, .page__title h1 span, .page__title h1 p, .page__title h1 a {
+      font-size: 60px;
+      font-weight: 900; }
+
+.page__text {
+  font-size: 16px; }
+  .page__text--xs {
+    font-size: 12px; }
+  .page__text--sm {
+    font-size: 14px; }
+  .page__text--md {
+    font-size: 18px; }
+  .page__text--lg {
+    font-size: 20px; }
+  .page__text--xl {
+    font-size: 22px; }
+
+.page__href--xs:after, .page__href--sm:after, .page__href--md:after, .page__href--lg:after, .page__href--xl:after {
+  content: '';
+  position: absolute;
+  top: calc(50% - 3px);
+  right: 0;
+  width: 10px;
+  height: 6px;
+  background: url(../img/ico/ico_arrow_02.svg) center/cover no-repeat; }
+
+.page__href--xs {
+  font-size: 12px; }
+
+.page__href--sm {
+  font-size: 14px; }
+
+.page__href--md {
+  font-size: 18px; }
+
+.page__href--lg {
+  font-size: 20px; }
+
+.page__href--xl {
+  font-size: 22px; }
+
+.page__menu {
+  display: block;
+  position: fixed;
+  width: 100%;
+  height: 80px;
+  top: 0;
+  left: 0;
+  background: #2d2d2d;
+  z-index: 1000; }
+
+.page__slider-buttons--group {
+  position: absolute;
+  right: 0;
+  bottom: 80px;
+  background: #2a2a2a;
+  border: 0;
+  border-bottom: 1px solid #e50000;
+  z-index: 101; }
+
+.page__slider-buttons--main {
+  display: inline-block;
+  width: 220px;
+  height: 70px;
+  font-size: 0;
+  cursor: pointer;
+  transition: all .3s ease-in-out; }
+  .page__slider-buttons--main:nth-of-type(1) {
+    right: 220px; }
+  .page__slider-buttons--main[data-slide="1"] .page__slider-buttons--image {
+    background: url("/app/img/photos/bg_01_mainpage_slide_02_no-bg.jpg") center/cover no-repeat; }
+  .page__slider-buttons--main[data-slide="2"] .page__slider-buttons--image {
+    background: url("/app/img/photos/bg_01_mainpage_slide_03_no-bg.jpg") center/cover no-repeat; }
+  .page__slider-buttons--main[data-slide="0"] .page__slider-buttons--image {
+    background: url("/app/img/photos/bg_01_mainpage_slide_01_no-bg.jpg") center/cover no-repeat; }
+  .page__slider-buttons--main:hover {
+    background: rgba(255, 255, 255, 0.05); }
+
+.page__slider-buttons--arrow-prev, .page__slider-buttons--arrow-next {
+  display: inline-block;
+  width: 50%;
+  height: 100%;
+  background: transparent; }
+
+.page__slider-buttons--arrow-prev {
+  background: url("/app/img/ico/ico_arrow_left.png") center/75px no-repeat, transparent; }
+
+.page__slider-buttons--arrow-next {
+  background: url("/app/img/ico/ico_arrow_right.png") center/75px no-repeat, transparent; }
+
+.page__slider-buttons--image {
+  width: 50%;
+  height: 100%;
+  display: inline-block; }
+
+.slick-slide {
+  outline: none !important; }
+
+.page__slider--half .slick-dots {
+  position: absolute;
+  top: 60px;
+  width: 100%; }
+  .page__slider--half .slick-dots li {
+    display: inline-block;
+    margin-right: 6px; }
+    .page__slider--half .slick-dots li button {
+      width: 8px;
+      height: 8px;
+      background: #fff;
+      border: 0;
+      margin: 0;
+      padding: 0;
+      border-radius: 100%;
+      transition: all .3 ease-in-out; }
+
+.page__section--gray .slick-dots li.slick-active button {
+  background: #e50000; }
+
+.page__section--red .slick-dots li.slick-active button {
+  background: #2a2a2a; }
+
+/*@media (max-width: $laptop) {
+  @import "../partials/laptop/page";
+  @import "../partials/laptop/typography";
+}*/
+/*@media (max-width: $tablet) {
+  @import "../partials/tablet/menu";
+  @import "../partials/tablet/typography";
+  @import "../partials/tablet/page";
+  @import "../partials/tablet/footer";
+}*/
+/*@media (max-width: $mobile) {
+  @import "../partials/mobile/page";
+  @import "../partials/mobile/menu";
+}*/
+/*@media (max-width: $v_mobile) {
+  @import "../partials/mobile/v-page";
+  @import "../partials/mobile/v-typography";
+  @import "../partials/mobile/v-objects";
+  @import "../partials/mobile/v-footer";
+}*/

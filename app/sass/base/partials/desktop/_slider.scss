@@ -1,0 +1,96 @@
+.page__slider-buttons {
+  &--group {
+      position: absolute;
+      right: 0;
+      bottom: 80px;
+      background: #2a2a2a;
+      border: 0;
+      border-bottom: 1px solid $brand-red;
+      z-index: 101;
+  }
+  &--main {
+    display: inline-block;
+    width: 220px;
+    height: 70px;
+    font-size: 0;
+    cursor: pointer;
+    transition: all .3s ease-in-out;
+
+    &:nth-of-type(1) {
+        right: 220px;
+    }
+
+    &[data-slide="1"] .page__slider-buttons--image {
+      background: url('/app/img/photos/bg_01_mainpage_slide_02_no-bg.jpg') center/cover no-repeat;
+    }
+    &[data-slide="2"] .page__slider-buttons--image {
+      background: url('/app/img/photos/bg_01_mainpage_slide_03_no-bg.jpg') center/cover no-repeat;
+    }
+    &[data-slide="0"] .page__slider-buttons--image {
+      background: url('/app/img/photos/bg_01_mainpage_slide_01_no-bg.jpg') center/cover no-repeat;
+    }
+
+    &:hover {
+      background: rgba(255, 255, 255, 0.05);
+    }
+  }
+  &--arrow {
+    &-prev,
+    &-next {
+      display: inline-block;
+      width: 50%;
+      height: 100%;
+      background: transparent;
+    }
+    &-prev {
+      background: url("/app/img/ico/ico_arrow_left.png") center/75px no-repeat, transparent;
+    }
+    &-next {
+      background: url("/app/img/ico/ico_arrow_right.png") center/75px no-repeat, transparent;
+    }
+  }
+  &--image {
+    width: 50%;
+    height: 100%;
+    display: inline-block;
+  }
+}
+
+.slick-slide {
+    outline: none !important;
+}
+.page__slider--half {
+  .slick-dots {
+    position: absolute;
+    top: 60px;
+    width: 100%;
+
+      li {
+        display: inline-block;
+        margin-right: 6px;
+
+        button {
+          width: 8px;
+          height: 8px;
+          background: #fff;
+          border: 0;
+          margin: 0;
+          padding: 0;
+          border-radius: 100%;
+          transition: all .3 ease-in-out;
+        }
+      }
+    }
+}
+.page__section {
+  &--gray {
+    .slick-dots li.slick-active button {
+        background: $brand-red;
+    }
+  }
+  &--red {
+    .slick-dots li.slick-active button {
+        background: #2a2a2a;
+    }
+  }
+}

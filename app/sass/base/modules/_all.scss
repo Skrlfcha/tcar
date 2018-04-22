@@ -1,0 +1,38 @@
+// Variables and mixins
+@import "_mixins";
+@import "variables";
+
+// Partial
+@import "../partials/desktop/reset";
+@import "../partials/desktop/page";
+@import "../partials/desktop/typography";
+@import "../partials/desktop/objects";
+@import "../partials/desktop/custom";
+@import "../partials/desktop/popups";
+@import "../partials/desktop/menu";
+@import "../partials/desktop/footer";
+@import "../partials/desktop/inputs";
+@import "../partials/desktop/slider";
+
+// Media
+
+/*@media (max-width: $laptop) {
+  @import "../partials/laptop/page";
+  @import "../partials/laptop/typography";
+}*/
+/*@media (max-width: $tablet) {
+  @import "../partials/tablet/menu";
+  @import "../partials/tablet/typography";
+  @import "../partials/tablet/page";
+  @import "../partials/tablet/footer";
+}*/
+/*@media (max-width: $mobile) {
+  @import "../partials/mobile/page";
+  @import "../partials/mobile/menu";
+}*/
+/*@media (max-width: $v_mobile) {
+  @import "../partials/mobile/v-page";
+  @import "../partials/mobile/v-typography";
+  @import "../partials/mobile/v-objects";
+  @import "../partials/mobile/v-footer";
+}*/
