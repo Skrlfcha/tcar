@@ -10,8 +10,8 @@
   }
   &--main {
     display: inline-block;
-    width: 220px;
-    height: 70px;
+    width: 180px;
+    height: 60px;
     font-size: 0;
     cursor: pointer;
     transition: all .3s ease-in-out;
@@ -43,10 +43,10 @@
       background: transparent;
     }
     &-prev {
-      background: url("/app/img/ico/ico_arrow_left.png") center/75px no-repeat, transparent;
+      background: url("/app/img/ico/ico_arrow_left.svg") center/75px no-repeat, transparent;
     }
     &-next {
-      background: url("/app/img/ico/ico_arrow_right.png") center/75px no-repeat, transparent;
+      background: url("/app/img/ico/ico_arrow_right.svg") center/75px no-repeat, transparent;
     }
   }
   &--image {
