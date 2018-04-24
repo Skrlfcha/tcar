@@ -4,9 +4,10 @@
 
   &--fullpage {
     height: 100vh;
+    min-height: 700px;
   }
   &--halfpage {
-    height: 400px;
+    height: 350px;
     font-size: 0;
   }
   &--gray {
@@ -21,6 +22,7 @@
     height: calc(100vh - 80px);
     margin-top: 80px;
     background: #3a3a3a;
+    min-height: 700px;
   }
 }
 .page__absolute {
@@ -97,35 +99,23 @@
     bottom: 20px;
     width: 80px;
     height: 40px;
-    background: url("/app/img/ico/ico_arrow_left.png") center/64px no-repeat, transparent;
+    background: url("/app/img/ico/ico_arrow_left.svg") center/64px no-repeat, transparent;
     transform: rotate(-90deg);
     transition: all .3s ease-in-out;
     cursor: pointer;
 
     &:hover {
-      background: url("/app/img/ico/ico_arrow_left.png") center/64px no-repeat, rgba(255, 255, 255, .2);
+      background: url("/app/img/ico/ico_arrow_left.svg") center/64px no-repeat, rgba(255, 255, 255, .2);
     }
   }
 }
-.page__container {
-    display: table;
-    height: 100%;
-    width: 1200px;
-    margin: 0 auto;
-
-    .page__vertical-aligment {
-      display: table-cell;
-      vertical-align: middle;
-    }
-}
 .page__buttons-container {
-  max-width: 700px;
-  height: 70px;
-  border-bottom: 1px solid $brand-red;
+  max-width: 600px;
+  height: 60px;
   color: #fff;
   font-family: "Open Sans", sans-serif;
   font-size: 0;
-  margin-top: 80px;
+  margin-top: 70px;
 
   .page__nav-button {
     display: inline-block;
@@ -133,9 +123,10 @@
     font-size: 16px;
     font-weight: 600;
     text-align: center;
-    line-height: 4.3;
+    line-height: 3.65;
     transition: all .3s ease-in-out;
     cursor: pointer;
+    border-bottom: 1px solid $brand-red;
 
     &:nth-of-type(1) {
       background: #2a2a2a;
@@ -146,8 +137,8 @@
     }
     &:nth-of-type(2) {
       border: 1px solid rgba(255, 255, 255, 0.2);
+      border-bottom: 1px solid $brand-red;
       border-left: 0;
-      border-bottom: 0;
 
       &:hover {
         background: rgba(255, 255, 255, 0.1);
@@ -164,6 +155,7 @@
   &-content {
     width: 100%;
     height: calc(100vh - 80px);
+    min-height: 700px;
 
     &[data-image="1"] {
       background: url("/app/img/photos/bg_01_mainpage_slide_01.jpg") center/cover no-repeat;
@@ -179,33 +171,77 @@
 .page__half-group {
     display: inline-block;
     width: 50%;
-    height: 400px;
+    height: 350px;
     float: left;
 }
-.page__content--half-wrapper {
-    position: relative;
-    width: calc(1200px / 2);
-    height: 100%;
-    margin: 0 0 0 auto;
-    padding: 0;
-    padding-right: 70px;
+.page__content {
+  &--desires {
+    font-size: 0;
+    margin-top: 80px;
 
-    &--reverse {
-      margin: 0;
-      padding: 0;
-      margin-left: 70px;
+    &-block {
+      position: relative;
+      float: left;
+      display: inline-block;
+
+      &:nth-of-type(1) {
+          width: 50%;
+      }
+      &:nth-of-type(2) {
+          width: 50%;
+
+          img {
+            position: absolute;
+            width: 600px;
+            top: -54px;
+            right: -106px;
+          }
+      }
     }
+  }
+  &--half-wrapper {
+      position: relative;
+      max-width: calc(1200px / 2);
+      height: 100%;
+      margin: 0 0 0 auto;
+      padding: 0 30px;
+      padding-right: 70px;
+
+      &--reverse {
+        margin: 0;
+        padding: 0;
+        margin-left: 70px;
+      }
+  }
 }
 .page__aligment {
     display: table;
-    height: 400px;
+    height: 350px;
     width: 100%;
 
+    .page__bottom-aligment,
+    .page__center-aligment {
+      display: table-cell;
+      padding-bottom: 80px;
+      padding-top: 80px;
+    }
     .page__bottom-aligment {
-        display: table-cell;
         vertical-align: bottom;
-        padding-bottom: 80px;
-        padding-top: 80px;
+    }
+    .page__center-aligment {
+        vertical-align: middle;
+    }
+}
+.page__container {
+    display: table;
+    height: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 30px;
+
+    .page__vertical-aligment {
+      display: table-cell;
+      vertical-align: middle;
     }
 }
 .page__slider-button-next.js-goto-slider {
