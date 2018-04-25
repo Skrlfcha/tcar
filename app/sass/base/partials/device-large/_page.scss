@@ -1,0 +1,28 @@
+.page__container {
+  width: 100%;
+}
+.page__content--desires-block:nth-of-type(2) img {
+  width: 450px;
+  top: -30px;
+  right: 0;
+}
+.page__absolute-container {
+  width: 100%;
+
+  .u {
+    &-left-bottom-rotated {
+      left: -40px;
+      bottom: 0;
+      transform: rotate(-90deg);
+    }
+    &-top-left {
+      left: 20px;
+    }
+    &-top-right-rotated {
+      right: -40px;
+    }
+  }
+}
+.page__absolute-sliderNumber {
+  right: 9px;
+}

@@ -3,36 +3,35 @@
 @import "variables";
 
 // Partial
-@import "../partials/desktop/reset";
-@import "../partials/desktop/page";
-@import "../partials/desktop/typography";
-@import "../partials/desktop/objects";
-@import "../partials/desktop/custom";
-@import "../partials/desktop/popups";
-@import "../partials/desktop/menu";
-@import "../partials/desktop/footer";
-@import "../partials/desktop/inputs";
-@import "../partials/desktop/slider";
+@import "../partials/device-default/reset";
+@import "../partials/device-default/page";
+@import "../partials/device-default/typography";
+@import "../partials/device-default/objects";
+@import "../partials/device-default/custom";
+@import "../partials/device-default/popups";
+@import "../partials/device-default/menu";
+@import "../partials/device-default/footer";
+@import "../partials/device-default/inputs";
+@import "../partials/device-default/slider";
 
 // Media
 
-/*@media (max-width: $laptop) {
-  @import "../partials/laptop/page";
-  @import "../partials/laptop/typography";
-}*/
-/*@media (max-width: $tablet) {
-  @import "../partials/tablet/menu";
-  @import "../partials/tablet/typography";
-  @import "../partials/tablet/page";
-  @import "../partials/tablet/footer";
-}*/
-/*@media (max-width: $mobile) {
-  @import "../partials/mobile/page";
-  @import "../partials/mobile/menu";
-}*/
-/*@media (max-width: $v_mobile) {
-  @import "../partials/mobile/v-page";
-  @import "../partials/mobile/v-typography";
-  @import "../partials/mobile/v-objects";
-  @import "../partials/mobile/v-footer";
-}*/
+// Small devices (landscape phones, 576px and up)
+@media (max-width: $device-small) {
+  @import "../partials/device-small/page";
+}
+
+// Medium devices (tablets, 768px and up)
+@media (max-width: $device-medium) {
+  @import "../partials/device-middle/page";
+}
+
+// Large devices (desktops, 992px and up)
+@media (max-width: $device-large) {
+  @import "../partials/device-large/page";
+}
+
+// Default devices (default, 1200px and up)
+@media (max-width: $device-default) {
+  /*@import "../partials/device-default/page";*/
+}
