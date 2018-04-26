@@ -16,6 +16,9 @@
 .page__features-block {
   .page__feature {
     display: block;
+    height: initial;
+    padding-bottom: 30px;
+
     @for $i from 1 through 7 {
       &[data-block="#{$i}"] {
         background: transparent;

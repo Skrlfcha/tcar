@@ -16,14 +16,9 @@
 
 // Media
 
-// Small devices (landscape phones, 576px and up)
-@media (max-width: $device-small) {
-  @import "../partials/device-small/page";
-}
-
-// Medium devices (tablets, 768px and up)
-@media (max-width: $device-medium) {
-  @import "../partials/device-middle/page";
+// Default devices (default, 1200px and up)
+@media (max-width: $device-default) {
+  /*@import "../partials/device-default/page";*/
 }
 
 // Large devices (desktops, 992px and up)
@@ -31,7 +26,17 @@
   @import "../partials/device-large/page";
 }
 
-// Default devices (default, 1200px and up)
-@media (max-width: $device-default) {
-  /*@import "../partials/device-default/page";*/
+// Medium devices (tablets, 768px and up)
+@media (max-width: $device-medium) {
+  @import "../partials/device-middle/page";
+}
+
+// Small devices (landscape phones, 576px and up)
+@media (max-width: $device-small) {
+  @import "../partials/device-small/page";
+}
+
+// Thin devices (landscape phones, 576px and up)
+@media (max-width: $device-thin) {
+  @import "../partials/device-thin/page";
 }
