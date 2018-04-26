@@ -1,0 +1,26 @@
+{
+  "name": "tcar",
+  "version": "1.0.0",
+  "description": "landing for car",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Skrlfcha/tcar.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Skrlfcha/tcar/issues"
+  },
+  "homepage": "https://github.com/Skrlfcha/tcar#readme",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-sass": "^4.0.1"
+  },
+  "dependencies": {
+    "browser-sync": "^2.23.7"
+  }
+}

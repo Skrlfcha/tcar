@@ -1,0 +1,37 @@
+.page__section--main {
+  height: 370px;
+  min-height: 370px;
+}
+.page__slider-content {
+  height: 370px;
+  min-height: 370px;
+}
+.page__section--main .page__title h1 {
+  font-size: 26px;
+  text-align: center;
+
+  span {
+    font-size: 26px;
+  }
+}
+.page__title h3 {
+  font-size: 26px;
+  font-weight: 600;
+}
+.page__buttons-container .page__nav-button {
+  width: 100%;
+  margin-bottom: 20px;
+}
+.page__title--lg, .page__title h2 {
+  font-size: 26px;
+
+  span {
+    font-size: 26px;
+  }
+}
+.page__content--desires {
+  margin-top: 20px;
+}
+.page__last-container {
+  width: 100%;
+}
