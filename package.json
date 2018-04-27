@@ -17,10 +17,10 @@
   },
   "homepage": "https://github.com/Skrlfcha/tcar#readme",
   "devDependencies": {
-    "gulp": "^3.9.1",
-    "gulp-sass": "^4.0.1"
+    "gulp": "^3.9.1"
   },
   "dependencies": {
-    "browser-sync": "^2.23.7"
+    "browser-sync": "^2.23.7",
+    "gulp-sass": "^4.0.1"
   }
 }

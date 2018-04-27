@@ -7,4 +7,81 @@
   left: 0;
   background: #2d2d2d;
   z-index: 1000;
+  padding: 0 80px;
+}
+.page__menu-column {
+  width: 50%;
+
+  &:nth-of-type(1) {
+    float: left;
+  }
+  &:nth-of-type(2) {
+    float: right;
+  }
+}
+.page__menu-logo {
+    width: 80px;
+    height: 80px;
+    background: url(/app/img/logo/logo-toyota-sm.png) center left /60px no-repeat;
+    display: inline-block;
+    float: left;
+}
+.page__menu-line {
+  float: left;
+    color: #fff;
+    border-left: 1px solid #fff;
+    padding-left: 20px;
+    padding: 5px 20px;
+    font-family: "Open Sans", sans-serif;
+    font-size: 12px;
+    opacity: .6;
+    font-weight: 100;
+    margin: 29px 0;
+}
+.page__menu-button {
+    background: red;
+    color: #fff;
+    font-family: "Open Sans", sans-serif;
+    width: 140px;
+    text-align: center;
+    line-height: 2.4;
+    float: right;
+    margin: 21px 0;
+    cursor: pointer;
+}
+.page__menu-sandwich {
+    background: url(/app/img/ico/menu-button.svg) center/25px no-repeat;
+    width: 40px;
+    height: 40px;
+    float: right;
+    margin: 20px 0 20px 20px;
+    cursor: pointer;
+}
+.page__menu-links {
+    display: none;
+    position: fixed;
+    top: 80px;
+    z-index: 100;
+    width: 100%;
+    background: #212121;
+
+    &-container {
+      display: table;
+      width: 1200px;
+      margin: 0 auto;
+    }
+}
+.page__menu-link {
+    color: #fff;
+    font-family: "Open Sans", sans-serif;
+    display: table-cell;
+    padding: 25px 0;
+    font-size: 14px;
+    text-align: center;
+    cursor: pointer;
+    transition: all .3s ease-in-out;
+
+    &:hover {
+      background: #2d2d2d;
+    }
 }
