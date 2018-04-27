@@ -16,23 +16,28 @@
     <link rel="stylesheet" href="app/css/slick/slick-1.8.1.min.css" type="text/css" media="all" />
 
     <link rel="stylesheet" href="app/css/main.css" type="text/css" media="all" />
-
-    <script type="text/javascript" src="app/js/jquery-3.3.1.min.js"></script>
-    <script type="text/javascript" src="app/js/slick-1.8.1.min.js"></script>
-
-    <script type="text/javascript" src="app/js/script.js"></script>
 </head>
 <body>
 <main>
+    <div class="page__menu-links">
+      <div class="page__menu-links-container">
+        <div class="page__menu-link">Исполнение желаний</div>
+        <div class="page__menu-link">Условия участия</div>
+        <div class="page__menu-link">Особенности Camry70</div>
+        <div class="page__menu-link">7 фактов лидерства</div>
+      </div>
+    </div>
     <div class="page__menu">
+      <div class="row">
         <div class="page__menu-column">
             <div class="page__menu-logo"></div>
-            <div class="page__menu-line"></div>
+            <div class="page__menu-line">Управляй мечтой</div>
         </div>
         <div class="page__menu-column">
-            <div class="page__menu-button"></div>
-            <div class="page__menu-sandwich"></div>
+            <div class="page__menu-sandwich js-show-menu"></div>
+            <div class="page__menu-button">О проекте</div>
         </div>
+      </div>
     </div>
     <section class="page__section">
         <div class="page__section--main">
@@ -50,6 +55,7 @@
                               <div class="page__absolute-arrowDown"></div>
                               <div class="page__container">
                                 <div class="page__vertical-aligment">
+                                  <div class="page__main-camry-logo"></div>
                                   <div class="page__title" data-color="white">
                                     <h1>#<span data-color="red">WoW</span>Camry70kz</h1>
                                     <h3>Исполняй мечты вместе с Camry!</h3>
@@ -91,8 +97,9 @@
                               <div class="page__absolute-arrowDown"></div>
                               <div class="page__container">
                                 <div class="page__vertical-aligment">
+                                  <div class="page__main-camry-logo"></div>
                                   <div class="page__title" data-color="white">
-                                    <h1>#<span class="page__text--red">WoW</span>Camry70kz</h1>
+                                    <h1>#<span data-color="red">WoW</span>Camry70kz</h1>
                                     <h3>Исполняй мечты вместе с Camry!</h3>
                                   </div>
                                   <div class="page__buttons-container">
@@ -132,8 +139,9 @@
                               <div class="page__absolute-arrowDown"></div>
                               <div class="page__container">
                                 <div class="page__vertical-aligment">
+                                  <div class="page__main-camry-logo"></div>
                                   <div class="page__title" data-color="white">
-                                    <h1>#<span class="page__text--red">WoW</span>Camry70kz</h1>
+                                    <h1>#<span data-color="red">WoW</span>Camry70kz</h1>
                                     <h3>Исполняй мечты вместе с Camry!</h3>
                                   </div>
                                   <div class="page__buttons-container">
@@ -172,7 +180,7 @@
           </div>
           <div class="page__content--desires">
             <div class="page__content--desires-block">
-              <p class="page__text">
+              <p class="page__text" style="background: #fff">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
                 tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
                 veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
@@ -497,8 +505,52 @@
       </div>
     </section>
     <section class="page__footer">
-      
+      <footer>
+        <div class="footer__rows">
+          <div class=footer__rows-row>
+            <div class="footer__faq-block">
+              <div class="footer__faq-title js-open-faq open"><span>#</span> Можно ли устроить тест-драйв данных автомобилей?</div>
+              <div class="footer__faq-text">- К сожалению, нет. Данные автомобили не предназначены для тест-драйва. Касательно тест-драйва, можно обратиться в любой региональный дилерский автоцентр Toyota в вашем городе.</div>
+            </div>
+            <div class="footer__faq-block">
+              <div class="footer__faq-title js-open-faq"><span>#</span> Где можно посмотреть автомобиль без участия в проекте?</div>
+              <div class="footer__faq-text">- В указанные на сайте даты, в вашем городе скорее всего вы сможете увидеть данный автомобиль в дилерском центре Toyota в вашем городе.</div>
+            </div>
+            <div class="footer__faq-block">
+              <div class="footer__faq-title js-open-faq"><span>#</span> Как долго я могу пользоваться вашими услугами?</div>
+              <div class="footer__faq-text">- Это зависит от времени, требующегося на реализацию вашего желания?</div>
+            </div>
+            <div class="footer__faq-block">
+              <div class="footer__faq-title js-open-faq"><span>#</span> Могу ли я уехать с вами в другой город?</div>
+              <div class="footer__faq-text">- Если нам по пути, то почему бы и нет!</div>
+            </div>
+            <div class="footer__faq-block">
+              <div class="footer__faq-title js-open-faq"><span>#</span> Как с вами связаться?</div>
+              <div class="footer__faq-text">- Через социальные сети. Вы можете обратиться к нам через Instagram или Facebook. Официальные страницы Toyota Kazakhstan указаны здесь.</div>
+            </div>
+            <div class="footer__faq-block">
+              <div class="footer__faq-title js-open-faq"><span>#</span> Могу ли я вызвать вас вместо такси?</div>
+              <div class="footer__faq-text">- Если это ваше желание - вполне. Только мы не возьмем у вас оплату за проезд.</div>
+            </div>
+          </div>
+          <div class=footer__rows-row>
+            <div class="footer__logo"></div>
+            <div class="footer__soc-links">
+              <a class="footer__soc-link"></a>
+              <a class="footer__soc-link"></a>
+            </div>
+            <div class="footer__copyright">
+              Toyota. Все права защищены.<br />© Copyright 2018
+            </div>
+          </div>
+        </div>
+      </footer>
     </section>
 </main>
 </body>
+<script type="text/javascript" src="app/js/confetti.js"></script>
+<script type="text/javascript" src="app/js/jquery-3.3.1.min.js"></script>
+<script type="text/javascript" src="app/js/slick-1.8.1.min.js"></script>
+
+<script type="text/javascript" src="app/js/script.js"></script>
 </html>

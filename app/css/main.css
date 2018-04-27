@@ -45,9 +45,24 @@ table {
   border-collapse: collapse;
   border-spacing: 0; }
 
+body {
+  overflow-x: hidden; }
+
+canvas {
+  top: 100vh !important;
+  z-index: -1;
+  opacity: 1; }
+
+.page__main-camry-logo {
+  width: 100%;
+  height: 60px;
+  background: url(/app/img/logo/shine.png) center/70% no-repeat;
+  margin-bottom: 70px; }
+
 .page__section {
   position: relative;
-  overflow: hidden; }
+  overflow: hidden;
+  z-index: 1; }
   .page__section--fullpage {
     height: 100vh;
     min-height: 700px; }
@@ -188,18 +203,19 @@ table {
     float: left;
     display: inline-block; }
     .page__content--desires-block:nth-of-type(1) {
-      width: 50%; }
+      width: 60%; }
     .page__content--desires-block:nth-of-type(2) {
-      width: 50%; }
+      width: 40%; }
       .page__content--desires-block:nth-of-type(2) img {
         position: absolute;
         width: 600px;
-        top: -54px;
-        right: -106px; }
+        top: -266px;
+        right: -104px;
+        z-index: -1; }
 
 .page__content--half-wrapper {
   position: relative;
-  max-width: calc( / 2);
+  max-width: calc(1200px / 2);
   height: 100%;
   margin: 0 0 0 auto;
   padding: 0 30px;
@@ -573,7 +589,160 @@ a, p, span, input {
   top: 0;
   left: 0;
   background: #2d2d2d;
-  z-index: 1000; }
+  z-index: 1000;
+  padding: 0 80px; }
+
+.page__menu-column {
+  width: 50%; }
+  .page__menu-column:nth-of-type(1) {
+    float: left; }
+  .page__menu-column:nth-of-type(2) {
+    float: right; }
+
+.page__menu-logo {
+  width: 80px;
+  height: 80px;
+  background: url(/app/img/logo/logo-toyota-sm.png) center left/60px no-repeat;
+  display: inline-block;
+  float: left; }
+
+.page__menu-line {
+  float: left;
+  color: #fff;
+  border-left: 1px solid #fff;
+  padding-left: 20px;
+  padding: 5px 20px;
+  font-family: "Open Sans", sans-serif;
+  font-size: 12px;
+  opacity: .6;
+  font-weight: 100;
+  margin: 29px 0; }
+
+.page__menu-button {
+  background: red;
+  color: #fff;
+  font-family: "Open Sans", sans-serif;
+  width: 140px;
+  text-align: center;
+  line-height: 2.4;
+  float: right;
+  margin: 21px 0;
+  cursor: pointer; }
+
+.page__menu-sandwich {
+  background: url(/app/img/ico/menu-button.svg) center/25px no-repeat;
+  width: 40px;
+  height: 40px;
+  float: right;
+  margin: 20px 0 20px 20px;
+  cursor: pointer; }
+
+.page__menu-links {
+  display: none;
+  position: fixed;
+  top: 80px;
+  z-index: 100;
+  width: 100%;
+  background: #212121; }
+  .page__menu-links-container {
+    display: table;
+    width: 1200px;
+    margin: 0 auto; }
+
+.page__menu-link {
+  color: #fff;
+  font-family: "Open Sans", sans-serif;
+  display: table-cell;
+  padding: 25px 0;
+  font-size: 14px;
+  text-align: center;
+  cursor: pointer;
+  transition: all .3s ease-in-out; }
+  .page__menu-link:hover {
+    background: #2d2d2d; }
+
+.page__footer {
+  height: 400px;
+  padding: 80px 0;
+  background: #1a1a1a; }
+  .page__footer footer {
+    width: 1200px;
+    margin: 0 auto; }
+
+.footer__rows {
+  font-size: 0; }
+  .footer__rows-row:nth-of-type(1) {
+    width: 50%;
+    display: inline-block; }
+  .footer__rows-row:nth-of-type(2) {
+    width: 30%;
+    display: inline-block;
+    float: right;
+    text-align: right; }
+
+.footer__faq-block {
+  padding: 8px 0; }
+
+.footer__faq-title, .footer__faq-text {
+  font-size: 14px;
+  color: #fff;
+  font-weight: 100;
+  font-family: "Open Sans", sans-serif; }
+  .footer__faq-title span, .footer__faq-text span {
+    color: #e50000;
+    font-weight: 700; }
+
+.footer__faq-text {
+  display: none; }
+
+.footer__faq-title {
+  position: relative;
+  display: inline-block;
+  border-bottom: 1px solid red;
+  padding-bottom: 4px;
+  padding-right: 20px;
+  margin-bottom: 4px;
+  cursor: pointer;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  user-select: none; }
+  .footer__faq-title.open ~ .footer__faq-text {
+    display: block; }
+  .footer__faq-title:after {
+    content: '';
+    position: absolute;
+    right: 0;
+    height: 15px;
+    width: 16px;
+    background: url(/app/img/ico/ico_arrow_right-small.png) center/8px no-repeat;
+    transition: all .3s ease-in-out; }
+  .footer__faq-title.active:after {
+    transform: rotate(90deg); }
+
+.footer__logo {
+  width: 100px;
+  height: 84px;
+  background: url(/app/img/logo/logo-toyota-sm.png) center/cover no-repeat;
+  margin: 0 0 20px auto; }
+
+.footer__copyright {
+  font-size: 12px;
+  color: #fff;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 100;
+  opacity: .2;
+  line-height: 1.6; }
+
+.footer__soc-link {
+  width: 40px;
+  height: 40px;
+  display: inline-block;
+  margin: 0 0 20px 10px;
+  cursor: pointer; }
+  .footer__soc-link:nth-of-type(1) {
+    background: url("/app/img/ico/instagram.svg") center/30px no-repeat; }
+  .footer__soc-link:nth-of-type(2) {
+    background: url("/app/img/ico/facebook.svg") center/30px no-repeat; }
 
 .page__slider-buttons--group {
   position: absolute;
@@ -736,6 +905,11 @@ a, p, span, input {
     display: none; } }
 
 @media (max-width: 490px) {
+  canvas {
+    top: 450px !important;
+    z-index: -1;
+    opacity: 1;
+    height: 100vh; }
   .page__section--main {
     height: 370px;
     min-height: 370px; }
