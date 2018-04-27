@@ -34,4 +34,13 @@ $(function(){
       $('.page__feature').attr('data-status', '');
       $('.page__feature[data-block="' + page_id + '"]').attr('data-status', 'active');
     });
+    $('.js-open-faq').on('click tap', function(){
+      $('.js-open-faq').removeClass('active');
+      $('.footer__faq-text').slideUp()
+      $(this).toggleClass('active');
+      $(this).next().slideDown();
+    });
+    $('.js-show-menu').on('click tap', function(){
+      $('.page__menu-links').slideToggle();
+    });
 });
