@@ -209,9 +209,10 @@ canvas {
       .page__content--desires-block:nth-of-type(2) img {
         position: absolute;
         width: 600px;
-        top: -266px;
-        right: -104px;
-        z-index: -1; }
+        top: -40px;
+        left: 0;
+        z-index: -1;
+        transform: scale(-1, 1); }
 
 .page__content--half-wrapper {
   position: relative;
