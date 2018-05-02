@@ -133,6 +133,7 @@ canvas {
   margin-top: 70px;
 
   .page__nav-button {
+    color: #fff;
     display: inline-block;
     width: 50%;
     font-size: 16px;
@@ -338,9 +339,11 @@ canvas {
   }
 }
 .page__last-container {
+    position: relative;
     width: $device-default;
     margin: 0 auto;
     padding: 200px 20px;
+    z-index: 10;
 }
 .page__about-7 {
   background: url("/app/img/photos/bg_01_lastpage.jpg") center/cover no-repeat;
@@ -369,4 +372,7 @@ canvas {
 }
 .u-mob-device {
   display: none;
+}
+.page__features-block .page__text {
+  line-height: 1.3;
 }
