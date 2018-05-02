@@ -3,6 +3,9 @@
     display: none;
   }
 }
+canvas {
+    top: 700px !important;
+}
 .page__content--half-wrapper--reverse {
   margin-left: 30px;
 }
@@ -75,4 +78,15 @@
 }
 .page__features-tabs {
   display: none;
+}
+.page__section--main {
+    min-height: 300px;
+    height: 600px;
+}
+.page__slider-content {
+    height: 600px;
+    min-height: 300px;
+}
+.page__last-container {
+    width: 100%;
 }

@@ -41,3 +41,20 @@ canvas {
 .page__last-container {
   width: 100%;
 }
+.page__main-camry-logo {
+    background: url(/app/img/logo/shine.png) center/90% no-repeat;
+    margin-bottom: 0;
+}
+.page__section--main {
+    height: 420px;
+}
+.page__slider-content {
+    height: 420px;
+}
+.page__title--lg, .page__title h2 {
+    font-size: 32px;
+}
+.page__title--sm, .page__title h4 {
+    font-size: 26px;
+    font-weight: 800;
+}

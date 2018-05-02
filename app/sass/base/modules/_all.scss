@@ -24,6 +24,8 @@
 // Large devices (desktops, 992px and up)
 @media (max-width: $device-large) {
   @import "../partials/device-large/page";
+  @import "../partials/device-large/menu";
+  @import "../partials/device-large/footer";
 }
 
 // Medium devices (tablets, 768px and up)
@@ -34,9 +36,12 @@
 // Small devices (landscape phones, 576px and up)
 @media (max-width: $device-small) {
   @import "../partials/device-small/page";
+  @import "../partials/device-small/menu";
+  @import "../partials/device-small/footer";
 }
 
 // Thin devices (landscape phones, 576px and up)
 @media (max-width: $device-thin) {
   @import "../partials/device-thin/page";
+  @import "../partials/device-thin/menu";
 }

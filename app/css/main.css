@@ -208,10 +208,11 @@ canvas {
       width: 40%; }
       .page__content--desires-block:nth-of-type(2) img {
         position: absolute;
-        width: 600px;
-        top: -266px;
-        right: -104px;
-        z-index: -1; }
+        width: 800px;
+        top: -20px;
+        left: 0;
+        z-index: -1;
+        transform: scale(-1, 1); }
 
 .page__content--half-wrapper {
   position: relative;
@@ -280,7 +281,8 @@ canvas {
 .page__features-block .page__feature {
   width: 100%;
   height: 350px;
-  display: none; }
+  display: none;
+  padding: 90px 130px; }
   .page__features-block .page__feature[data-status="active"] {
     display: block; }
   .page__features-block .page__feature[data-block="1"] {
@@ -835,7 +837,17 @@ a, p, span, input {
     .page__absolute-container .u-top-right-rotated {
       right: -40px; }
   .page__absolute-sliderNumber {
-    right: 9px; } }
+    right: 9px; }
+  .page__slider-content {
+    min-height: 750px; }
+  .page__menu-button {
+    display: none; }
+  .page__menu-links-container {
+    width: 100%; }
+  .page__footer {
+    padding: 80px 20px; }
+    .page__footer footer {
+      width: 100%; } }
 
 @media (max-width: 768px) {
   .page__section--fullpage {
@@ -850,6 +862,8 @@ a, p, span, input {
 @media (max-width: 576px) {
   * br {
     display: none; }
+  canvas {
+    top: 700px !important; }
   .page__content--half-wrapper--reverse {
     margin-left: 30px; }
   .u-top-right-rotated, .u-left-bottom-rotated, .u-top-left {
@@ -902,7 +916,37 @@ a, p, span, input {
   .u-mob-device {
     display: block; }
   .page__features-tabs {
-    display: none; } }
+    display: none; }
+  .page__section--main {
+    min-height: 300px;
+    height: 600px; }
+  .page__slider-content {
+    height: 600px;
+    min-height: 300px; }
+  .page__last-container {
+    width: 100%; }
+  .page__menu-link {
+    width: 100%;
+    display: table-row;
+    line-height: 6; }
+  .page__menu-links {
+    width: 320px;
+    right: 0; }
+  .page__footer {
+    height: initial; }
+  .footer__rows-row:nth-of-type(1),
+  .footer__rows-row:nth-of-type(2) {
+    width: 100%;
+    float: initial;
+    text-align: left; }
+  .footer__rows-row:nth-of-type(2) {
+    margin-top: 40px; }
+  .footer__logo {
+    margin: 0; }
+  .footer__soc-link {
+    margin: 20px 0; }
+    .footer__soc-link:nth-of-type(1), .footer__soc-link:nth-of-type(2) {
+      background-position: left center; } }
 
 @media (max-width: 490px) {
   canvas {
@@ -934,4 +978,20 @@ a, p, span, input {
   .page__content--desires {
     margin-top: 20px; }
   .page__last-container {
-    width: 100%; } }
+    width: 100%; }
+  .page__main-camry-logo {
+    background: url(/app/img/logo/shine.png) center/90% no-repeat;
+    margin-bottom: 0; }
+  .page__section--main {
+    height: 420px; }
+  .page__slider-content {
+    height: 420px; }
+  .page__title--lg, .page__title h2 {
+    font-size: 32px; }
+  .page__title--sm, .page__title h4 {
+    font-size: 26px;
+    font-weight: 800; }
+  .page__menu-line {
+    display: none; }
+  .page__menu {
+    padding: 0 40px; } }
