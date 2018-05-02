@@ -208,8 +208,8 @@ canvas {
       width: 40%; }
       .page__content--desires-block:nth-of-type(2) img {
         position: absolute;
-        width: 600px;
-        top: -40px;
+        width: 800px;
+        top: -20px;
         left: 0;
         z-index: -1;
         transform: scale(-1, 1); }
@@ -281,7 +281,8 @@ canvas {
 .page__features-block .page__feature {
   width: 100%;
   height: 350px;
-  display: none; }
+  display: none;
+  padding: 90px 130px; }
   .page__features-block .page__feature[data-status="active"] {
     display: block; }
   .page__features-block .page__feature[data-block="1"] {
