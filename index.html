@@ -21,10 +21,11 @@
 <main>
     <div class="page__menu-links">
       <div class="page__menu-links-container">
-        <div class="page__menu-link">Исполнение желаний</div>
-        <div class="page__menu-link">Условия участия</div>
-        <div class="page__menu-link">Особенности Camry70</div>
-        <div class="page__menu-link">7 фактов лидерства</div>
+        <div class="page__menu-link js-go-to-section" data-go="2">Исполнение желаний</div>
+        <div class="page__menu-link js-go-to-section" data-go="5">Условия участия</div>
+        <div class="page__menu-link js-go-to-section" data-go="6">Анонсы</div>
+        <div class="page__menu-link js-go-to-section" data-go="7">Особенности Camry70</div>
+        <div class="page__menu-link js-go-to-section" data-go="8">7 фактов лидерства</div>
       </div>
     </div>
     <div class="page__menu">
@@ -35,11 +36,11 @@
         </div>
         <div class="page__menu-column">
             <div class="page__menu-sandwich js-show-menu"></div>
-            <div class="page__menu-button">О проекте</div>
+            <div class="page__menu-button js-go-to-section" data-go="2">О проекте</div>
         </div>
       </div>
     </div>
-    <section class="page__section">
+    <section data-section="1" class="page__section">
         <div class="page__section--main">
             <div class="page__slider page__slider--main js-main-slider">
                 <div>
@@ -61,10 +62,10 @@
                                     <h3>Исполняй мечты вместе с Camry!</h3>
                                   </div>
                                   <div class="page__buttons-container">
-                                    <div class="page__nav-button">
+                                    <div class="page__nav-button js-go-to-section" data-go="2">
                                       Исполнение желаний
                                     </div>
-                                    <div class="page__nav-button">
+                                    <div class="page__nav-button js-go-to-section" data-go="7">
                                       Особенности
                                     </div>
                                   </div>
@@ -171,7 +172,7 @@
             </div>
         </div>
     </section>
-    <section class="page__section page__section--fullpage">
+    <section data-section="2" class="page__section page__section--fullpage">
       <div class="page__aligment page__container">
         <div class="page__center-aligment">
           <div class="page__title" data-color="gray">
@@ -201,7 +202,7 @@
                 жизни. Просто дайте знать нам об этом.
               </p>
               <div class="page__buttons-container">
-                <div class="page__nav-button">
+                <div class="page__nav-button js-go-to-section" data-go="4">
                   Исполнение желаний
                 </div>
               </div>
@@ -213,7 +214,7 @@
         </div>
       </div>
     </section>
-    <section class="page__section page__section--halfpage page__section--gray">
+    <section data-section="3" class="page__section page__section--halfpage page__section--gray">
       <div class="page__half-group page__image--half-img01 u-mob-device"></div>
       <div class="page__half-group">
         <div class="page__content--half-wrapper">
@@ -270,14 +271,33 @@
                   </p>
                 </div>
               </div>
-              <div class="page__slider-button-next js-goto-slider" data-slide="0" data-parent="js-slider-route"></div>
+              <div class="page__slider-button-next js-goto-slider" data-slide="3" data-parent="js-slider-route"></div>
+            </div>
+            <div>
+                <div class="page__aligment">
+                    <div class="page__bottom-aligment">
+                        <p class="page__text" data-color="white" data-custom-weight="300">
+                            21-23 июня 2018 года – <span data-color="red" data-custom-weight="700">Караганда</span>
+                        </p>
+                        <p class="page__text" data-color="white" data-custom-weight="300">
+                            25-27 июня 2018 года – <span data-color="red" data-custom-weight="700">Павлодар</span>
+                        </p>
+                        <p class="page__text" data-color="white" data-custom-weight="300">
+                            29 июня – 1 июля 2018 года – <span data-color="red" data-custom-weight="700">Усть-Каменогорск</span>
+                        </p>
+                        <p class="page__text" data-color="white" data-custom-weight="300">
+                            6-8 июля 2018 года – <span data-color="red" data-custom-weight="700">Алматы</span> (последний город, где будут исполняться желания)
+                        </p>
+                    </div>
+                </div>
+                <div class="page__slider-button-next js-goto-slider" data-slide="0" data-parent="js-slider-route"></div>
             </div>
           </div>
         </div>
       </div>
       <div class="page__half-group page__image--half-img01 u-desk-device"></div>
     </section>
-    <section class="page__section page__section--halfpage page__section--red">
+    <section data-section="4" class="page__section page__section--halfpage page__section--red">
       <div class="page__half-group page__image--half-img02"></div>
       <div class="page__half-group">
         <div class="page__content--half-wrapper page__content--half-wrapper--reverse">
@@ -335,7 +355,7 @@
         </div>
       </div>
     </section>
-    <section class="page__section page__section--halfpage page__section--gray">
+    <section data-section="5" class="page__section page__section--halfpage page__section--gray">
       <div class="page__half-group page__image--half-img03 u-mob-device"></div>
       <div class="page__half-group">
         <div class="page__content--half-wrapper">
@@ -413,7 +433,7 @@
       </div>
       <div class="page__half-group page__image--half-img03 u-desk-device"></div>
     </section>
-    <section class="page__section page__section--halfpage page__section--red">
+    <section data-section="6" class="page__section page__section--halfpage page__section--red">
       <div class="page__half-group page__image--half-img04"></div>
       <div class="page__half-group">
         <div class="page__content--half-wrapper page__content--half-wrapper--reverse">
@@ -455,7 +475,7 @@
         </div>
       </div>
     </section>
-    <section class="page__section page__section--fullpage">
+    <section data-section="7" class="page__section page__section--fullpage">
       <div class="page__aligment page__container">
         <div class="page__center-aligment">
           <div class="page__features-block">
@@ -589,15 +609,17 @@
         </div>
       </div>
     </section>
-    <section class="page__section page__about-7">
+    <section data-section="8" class="page__section page__about-7">
       <div class="page__last-container">
         <div class="page__title" data-color="gray">
           <h2 data-custom-weight="800" data-color="white">7 фактов несокрушимого <br />лидерства</h2>
         </div>
         <div class="page__buttons-container">
-          <div class="page__nav-button">
-            Подробнее
-          </div>
+            <a href="https://www.toyota.kz/new-cars/camry/index">
+                <div class="page__nav-button">
+                    Подробнее
+                </div>
+            </a>
         </div>
       </div>
       <div class="page__absolute-elements">
@@ -607,7 +629,7 @@
           </div>
       </div>
     </section>
-    <section class="page__footer">
+    <section data-section="9" class="page__footer">
       <footer>
         <div class="footer__rows">
           <div class=footer__rows-row>
@@ -639,8 +661,8 @@
           <div class=footer__rows-row>
             <div class="footer__logo"></div>
             <div class="footer__soc-links">
-              <a class="footer__soc-link"></a>
-              <a class="footer__soc-link"></a>
+              <a href="https://www.instagram.com/officialtoyotakz/" class="footer__soc-link"></a>
+              <a href="https://www.facebook.com/toyotakaz/" class="footer__soc-link"></a>
             </div>
             <div class="footer__copyright">
               Toyota. Все права защищены.<br />© Copyright 2018
