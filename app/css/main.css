@@ -877,7 +877,8 @@ a, p, span, input {
   .page__features-block .page__feature {
     display: block;
     height: initial;
-    padding-bottom: 30px; }
+    padding-bottom: 30px;
+    padding: 0; }
     .page__features-block .page__feature[data-block="1"] {
       background: transparent; }
     .page__features-block .page__feature[data-block="2"] {
@@ -892,6 +893,9 @@ a, p, span, input {
       background: transparent; }
     .page__features-block .page__feature[data-block="7"] {
       background: transparent; }
+    .page__features-block .page__feature .page__title[data-color="white"],
+    .page__features-block .page__feature .page__text[data-color="white"] {
+      color: #2a2a2a; }
   .page__absolute-sliderNumber {
     display: none; }
   .page__buttons-container {
@@ -931,6 +935,10 @@ a, p, span, input {
     min-height: 300px; }
   .page__last-container {
     width: 100%; }
+  .page__menu-column:nth-of-type(1) {
+    width: 80%; }
+  .page__menu-column:nth-of-type(2) {
+    width: 20%; }
   .page__menu-link {
     width: 100%;
     display: table-row;
