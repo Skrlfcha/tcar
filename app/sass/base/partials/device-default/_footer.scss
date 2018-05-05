@@ -30,7 +30,7 @@
   }
   &-title,
   &-text {
-    font-size: 14px;
+    font-size: 16px;
     color: #fff;
     font-weight: 100;
     font-family: "Open Sans", sans-serif;
@@ -92,16 +92,16 @@
     line-height: 1.6;
 }
 .footer__soc-link {
-    width: 40px;
-    height: 40px;
+    width: 50px;
+    height: 50px;
     display: inline-block;
     margin: 0 0 20px 10px;
     cursor: pointer;
 
     &:nth-of-type(1) {
-      background: url("/app/img/ico/instagram.svg") center/30px no-repeat;
+      background: url("/app/img/ico/instagram.svg") center/40px no-repeat;
     }
     &:nth-of-type(2) {
-      background: url("/app/img/ico/facebook.svg") center/30px no-repeat;
+      background: url("/app/img/ico/facebook.svg") center/40px no-repeat;
     }
 }
