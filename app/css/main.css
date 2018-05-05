@@ -70,7 +70,7 @@ canvas {
     height: 100vh;
     min-height: 830px; }
   .page__section--halfpage {
-    height: 350px;
+    height: 380px;
     font-size: 0; }
   .page__section--gray {
     background: #2a2a2a; }
@@ -196,7 +196,7 @@ canvas {
 .page__half-group {
   display: inline-block;
   width: 50%;
-  height: 350px;
+  height: 380px;
   float: left; }
 
 .page__content--desires {
@@ -232,7 +232,7 @@ canvas {
 
 .page__aligment {
   display: table;
-  height: 350px;
+  height: 380px;
   width: 100%; }
   .page__aligment .page__bottom-aligment,
   .page__aligment .page__center-aligment {

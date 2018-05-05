@@ -25,7 +25,7 @@ canvas {
     min-height: 830px;
   }
   &--halfpage {
-    height: 350px;
+    height: 380px;;
     font-size: 0;
   }
   &--gray {
@@ -190,7 +190,7 @@ canvas {
 .page__half-group {
     display: inline-block;
     width: 50%;
-    height: 350px;
+    height: 380px;
     float: left;
 }
 .page__content {
@@ -237,7 +237,7 @@ canvas {
 }
 .page__aligment {
     display: table;
-    height: 350px;
+    height: 380px;
     width: 100%;
 
     .page__bottom-aligment,
