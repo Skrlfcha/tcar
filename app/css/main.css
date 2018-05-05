@@ -1017,6 +1017,8 @@ a, p, span, input {
   .page__title--sm, .page__title h4 {
     font-size: 26px;
     font-weight: 800; }
+  .page__feature .page__text--md[data-color="white"] {
+    color: #2a2a2a; }
   .page__menu-line {
     display: none; }
   .page__menu {
