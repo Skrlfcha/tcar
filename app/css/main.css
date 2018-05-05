@@ -55,9 +55,12 @@ canvas {
 
 .page__main-camry-logo {
   width: 100%;
-  height: 60px;
-  background: url(/app/img/logo/shine.png) center/70% no-repeat;
-  margin-bottom: 70px; }
+  height: 100px;
+  background: url(/app/img/logo/shine.png) center/90% no-repeat;
+  margin-bottom: 70px;
+  position: absolute;
+  top: 40px;
+  left: 0; }
 
 .page__section {
   position: relative;
@@ -65,7 +68,7 @@ canvas {
   z-index: 1; }
   .page__section--fullpage {
     height: 100vh;
-    min-height: 700px; }
+    min-height: 830px; }
   .page__section--halfpage {
     height: 350px;
     font-size: 0; }
@@ -250,6 +253,11 @@ canvas {
   .page__container .page__vertical-aligment {
     display: table-cell;
     vertical-align: middle; }
+  .page__container .page__bottom-aligment {
+    display: table-cell;
+    vertical-align: bottom;
+    padding-bottom: 64px;
+    position: relative; }
 
 .page__features-tabs {
   width: 100%;
@@ -321,7 +329,7 @@ canvas {
   position: relative;
   width: 1200px;
   margin: 0 auto;
-  padding: 200px 20px;
+  padding: 360px 20px 40px;
   z-index: 10; }
 
 .page__about-7 {
@@ -621,10 +629,10 @@ a, p, span, input {
   padding-left: 20px;
   padding: 5px 20px;
   font-family: "Open Sans", sans-serif;
-  font-size: 12px;
+  font-size: 14px;
   opacity: .6;
-  font-weight: 100;
-  margin: 29px 0; }
+  font-weight: 200;
+  margin: 28px 0; }
 
 .page__menu-button {
   background: red;
@@ -692,7 +700,7 @@ a, p, span, input {
   padding: 8px 0; }
 
 .footer__faq-title, .footer__faq-text {
-  font-size: 14px;
+  font-size: 16px;
   color: #fff;
   font-weight: 100;
   font-family: "Open Sans", sans-serif; }
@@ -742,15 +750,15 @@ a, p, span, input {
   line-height: 1.6; }
 
 .footer__soc-link {
-  width: 40px;
-  height: 40px;
+  width: 50px;
+  height: 50px;
   display: inline-block;
   margin: 0 0 20px 10px;
   cursor: pointer; }
   .footer__soc-link:nth-of-type(1) {
-    background: url("/app/img/ico/instagram.svg") center/30px no-repeat; }
+    background: url("/app/img/ico/instagram.svg") center/40px no-repeat; }
   .footer__soc-link:nth-of-type(2) {
-    background: url("/app/img/ico/facebook.svg") center/30px no-repeat; }
+    background: url("/app/img/ico/facebook.svg") center/40px no-repeat; }
 
 .page__slider-buttons--group {
   position: absolute;
@@ -963,11 +971,15 @@ a, p, span, input {
       background-position: left center; } }
 
 @media (max-width: 490px) {
+  body {
+    width: 100vw;
+    overflow-x: hidden; }
   canvas {
     top: 450px !important;
     z-index: -1;
     opacity: 1;
-    height: 100vh; }
+    height: 100vh;
+    width: 100vw; }
   .page__section--main {
     height: 370px;
     min-height: 370px; }
