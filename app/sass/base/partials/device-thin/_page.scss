@@ -66,3 +66,30 @@ canvas {
 .page__feature .page__text--md[data-color="white"] {
   color: $brand-gray;
 }
+.page__section--main {
+    background: #010204;
+}
+.page__main-camry-logo {
+    top: -50px;
+}
+.page__slider-content {
+    height: 100%;
+}
+.page__section--main .page__buttons-container {
+    margin: 0 auto;
+    min-height: 140px;
+}
+.page__section--main {
+    height: 500px;
+}
+.page__last-container {
+    padding: 187px 20px 40px;
+}
+.page__about-7 {
+    background: url(/app/img/photos/bg_01_lastpage.jpg) top center/100% no-repeat, #edeced;
+}
+.page__section[data-section="2"] {
+  br {
+    display: block;
+  }
+}

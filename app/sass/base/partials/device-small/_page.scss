@@ -106,3 +106,6 @@ canvas {
 .page__about-7 {
     background: url(/app/img/photos/bg_01_lastpage.jpg) 80% center/cover no-repeat;
 }
+.page__slider-content[data-image="1"] {
+    background: url(/app/img/photos/bg_01_mainpage_slide_01.jpg) center top/100% no-repeat;
+}

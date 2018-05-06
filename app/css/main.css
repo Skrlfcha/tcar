@@ -376,6 +376,18 @@ canvas {
 .page__section--main .page__buttons-container {
   margin: 0 auto; }
 
+a.soc_anons {
+  width: 40px;
+  height: 40px;
+  display: inline-block;
+  margin: 0;
+  margin-right: 10px;
+  background: #fff; }
+  a.soc_anons.insta {
+    background: url("/app/img/ico/ins-wh.svg") center/30px no-repeat; }
+  a.soc_anons.fb {
+    background: url("/app/img/ico/fac-wh.svg") center/30px no-repeat; }
+
 /*@include fontFace('Roboto', '../fonts/Roboto/Roboto-100', normal, 100);
     @include fontFace('Roboto', '../fonts/Roboto/Roboto-100i', italic, 100);*/
 /*@include fontFace('Roboto', '../fonts/Roboto/Roboto-200', normal, 200);
@@ -390,7 +402,7 @@ canvas {
     @include fontFace('Roboto', '../fonts/Roboto/Roboto-900i', italic, 900);*/
 @font-face {
   font-family: 'Toyota';
-  src: url("/app/fonts/toyota/toyotatext_bd.ttf") format("truetype");
+  src: url("wowcamry70.kz/app/fonts/Toyota/toyotadisplay_bd.woff") format("truetype");
   font-style: normal;
   font-weight: 300; }
 
@@ -970,6 +982,8 @@ a, p, span, input {
     height: 160px; }
   .page__about-7 {
     background: url(/app/img/photos/bg_01_lastpage.jpg) 80% center/cover no-repeat; }
+  .page__slider-content[data-image="1"] {
+    background: url(/app/img/photos/bg_01_mainpage_slide_01.jpg) center top/100% no-repeat; }
   .page__menu-link {
     width: 100%;
     display: table-row;
@@ -1042,6 +1056,23 @@ a, p, span, input {
     font-weight: 800; }
   .page__feature .page__text--md[data-color="white"] {
     color: #2a2a2a; }
+  .page__section--main {
+    background: #010204; }
+  .page__main-camry-logo {
+    top: -50px; }
+  .page__slider-content {
+    height: 100%; }
+  .page__section--main .page__buttons-container {
+    margin: 0 auto;
+    min-height: 140px; }
+  .page__section--main {
+    height: 500px; }
+  .page__last-container {
+    padding: 187px 20px 40px; }
+  .page__about-7 {
+    background: url(/app/img/photos/bg_01_lastpage.jpg) top center/100% no-repeat, #edeced; }
+  .page__section[data-section="2"] br {
+    display: block; }
   .page__menu-line {
     display: none; }
   .page__menu {

@@ -255,7 +255,7 @@ canvas {
 .page__container {
     display: table;
     height: 100%;
-    width: $device-default;
+    width: 100%;
     margin: 0 auto;
     padding: 0 30px;
 
@@ -376,7 +376,7 @@ canvas {
 .u {
   &-top-right-rotated {
     right: -58px;
-    top: 120px;
+    top: 62px;
     transform: rotate(90deg);
   }
   &-left-bottom-rotated {
@@ -395,4 +395,19 @@ canvas {
   .page__buttons-container {
     margin: 0 auto;
   }
+}
+a.soc_anons {
+    width: 40px;
+    height: 40px;
+    display: inline-block;
+    margin: 0;
+    margin-right: 10px;
+    background: #fff;
+
+    &.insta {
+      background: url("/app/img/ico/ins-wh.svg") center/30px no-repeat;
+    }
+    &.fb {
+      background: url("/app/img/ico/fac-wh.svg") center/30px no-repeat;
+    }
 }
