@@ -266,7 +266,6 @@ canvas {
     .page__bottom-aligment {
       display: table-cell;
       vertical-align: bottom;
-      padding-bottom: 64px;
       position: relative;
     }
 }
@@ -350,7 +349,7 @@ canvas {
     position: relative;
     width: $device-default;
     margin: 0 auto;
-    padding: 360px 20px 40px;
+    padding: 540px 20px 40px;
     z-index: 10;
 }
 .page__about-7 {
@@ -391,4 +390,9 @@ canvas {
 }
 .page__features-block .page__text {
   line-height: 1.3;
+}
+.page__section--main {
+  .page__buttons-container {
+    margin: 0 auto;
+  }
 }
