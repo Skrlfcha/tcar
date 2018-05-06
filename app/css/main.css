@@ -187,7 +187,7 @@ canvas {
   height: calc(100vh - 80px);
   min-height: 700px; }
   .page__slider-content[data-image="1"] {
-    background: url("/app/img/photos/bg_01_mainpage_slide_01.jpg") center/cover no-repeat; }
+    background: url("/app/img/photos/bg_01_mainpage_slide_01.jpg") center right/cover no-repeat; }
   .page__slider-content[data-image="2"] {
     background: url("/app/img/photos/bg_01_mainpage_slide_02.jpg") center/cover no-repeat; }
   .page__slider-content[data-image="3"] {
@@ -215,8 +215,7 @@ canvas {
         width: 800px;
         top: -20px;
         left: 0;
-        z-index: -1;
-        transform: scale(-1, 1); }
+        z-index: -1; }
 
 .page__content--half-wrapper {
   position: relative;
@@ -289,9 +288,9 @@ canvas {
 
 .page__features-block .page__feature {
   width: 100%;
-  height: 350px;
+  height: 400px;
   display: none;
-  padding: 90px 130px; }
+  padding: 100px 130px; }
   .page__features-block .page__feature[data-status="active"] {
     display: block; }
   .page__features-block .page__feature[data-block="1"] {
@@ -313,17 +312,17 @@ canvas {
   width: 100px;
   height: 60px;
   position: absolute;
-  background: url("/app/img/ico/ico_arrow_right.png") center/70px no-repeat, transparent;
+  background: url("/app/img/ico/ico_arrow_right.svg") center/70px no-repeat, transparent;
   bottom: 10px;
   left: 0;
   transition: all .3s ease-in-out;
   cursor: pointer; }
 
 .page__section--gray .page__slider-button-next.js-goto-slider:hover {
-  background: url("/app/img/ico/ico_arrow_right.png") center/70px no-repeat, rgba(255, 255, 255, 0.1); }
+  background: url("/app/img/ico/ico_arrow_right.svg") center/70px no-repeat, rgba(255, 255, 255, 0.1); }
 
 .page__section--red .page__slider-button-next.js-goto-slider:hover {
-  background: url("/app/img/ico/ico_arrow_right.png") center/70px no-repeat, rgba(42, 42, 42, 0.1); }
+  background: url("/app/img/ico/ico_arrow_right.svg") center/70px no-repeat, rgba(42, 42, 42, 0.1); }
 
 .page__last-container {
   position: relative;
@@ -350,6 +349,14 @@ canvas {
 .page__image--half-img04 {
   position: relative;
   background: url("/app/img/photos/img_half-slide_04.jpg") center/cover no-repeat; }
+
+.page__image--half-img02 {
+  position: relative;
+  background: url("/app/img/photos/img_half-slide_02.jpg") center right/cover no-repeat; }
+
+.page__image--half-img03 {
+  position: relative;
+  background: url("/app/img/photos/img_half-slide_03.jpg") center left/cover no-repeat; }
 
 .u-top-right-rotated {
   right: -58px;
@@ -379,6 +386,12 @@ canvas {
     @include fontFace('Roboto', '../fonts/Roboto/Roboto-700i', italic, 700);*/
 /*@include fontFace('Roboto', '../fonts/Roboto/Roboto-900', normal, 900);
     @include fontFace('Roboto', '../fonts/Roboto/Roboto-900i', italic, 900);*/
+@font-face {
+  font-family: 'Toyota';
+  src: url("/app/fonts/toyota/toyotatext_bd.ttf") format("truetype");
+  font-style: normal;
+  font-weight: 300; }
+
 /*@include fontFace('Politica', '../fonts/Politica/Politica-300', normal, 300);
   @include fontFace('Politica', '../fonts/Politica/Politica-300i', italic, 300);*/
 /*@include fontFace('Politica', '../fonts/Politica/Politica-400', normal, 400);
@@ -391,7 +404,7 @@ canvas {
 
 a, p, span, input, .page__title, .page__title--xs, .page__title h5, .page__title--sm, .page__title h4, .page__title--md, .page__title h3, .page__title--lg, .page__title h2, .page__title--xl, .page__title h1,
 .page__title span, .page__title p, .page__title a {
-  font-family: "Montserrat", sans-serif;
+  font-family: "Toyota", sans-serif;
   font-weight: 300;
   margin: 0 0 10px; }
 
@@ -949,6 +962,12 @@ a, p, span, input {
     min-height: 300px; }
   .page__last-container {
     width: 100%; }
+  .page__text--md {
+    line-height: 1.5; }
+  .u-mob-height {
+    height: 160px; }
+  .page__about-7 {
+    background: url(/app/img/photos/bg_01_lastpage.jpg) 80% center/cover no-repeat; }
   .page__menu-link {
     width: 100%;
     display: table-row;
@@ -981,7 +1000,7 @@ a, p, span, input {
     z-index: -1;
     opacity: 1;
     height: 100vh;
-    width: 100vw; }
+    width: 90vw; }
   .page__section--main {
     height: 370px;
     min-height: 370px; }

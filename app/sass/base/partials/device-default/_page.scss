@@ -177,7 +177,7 @@ canvas {
     min-height: 700px;
 
     &[data-image="1"] {
-      background: url("/app/img/photos/bg_01_mainpage_slide_01.jpg") center/cover no-repeat;
+      background: url("/app/img/photos/bg_01_mainpage_slide_01.jpg") center right/cover no-repeat;
     }
     &[data-image="2"] {
       background: url("/app/img/photos/bg_01_mainpage_slide_02.jpg") center/cover no-repeat;
@@ -215,7 +215,6 @@ canvas {
             top: -20px;
             left: 0;
             z-index: -1;
-            transform: scale(-1, 1);
           }
       }
     }
@@ -310,9 +309,9 @@ canvas {
 .page__features-block {
   .page__feature {
     width: 100%;
-    height: 350px;
+    height: 400px;
     display: none;
-    padding: 90px 130px;
+    padding: 100px 130px;
 
     &[data-status="active"] {
       display: block;
@@ -329,7 +328,7 @@ canvas {
     width: 100px;
     height: 60px;
     position: absolute;
-    background: url("/app/img/ico/ico_arrow_right.png") center/70px no-repeat, transparent;
+    background: url("/app/img/ico/ico_arrow_right.svg") center/70px no-repeat, transparent;
     bottom: 10px;
     left: 0;
     transition: all .3s ease-in-out;
@@ -338,12 +337,12 @@ canvas {
 .page__section {
   &--gray {
     .page__slider-button-next.js-goto-slider:hover {
-      background: url("/app/img/ico/ico_arrow_right.png") center/70px no-repeat, rgba(255, 255, 255, 0.1);
+      background: url("/app/img/ico/ico_arrow_right.svg") center/70px no-repeat, rgba(255, 255, 255, 0.1);
     }
   }
   &--red {
     .page__slider-button-next.js-goto-slider:hover {
-      background: url("/app/img/ico/ico_arrow_right.png") center/70px no-repeat, rgba(42, 42, 42, .1);
+      background: url("/app/img/ico/ico_arrow_right.svg") center/70px no-repeat, rgba(42, 42, 42, .1);
     }
   }
 }
@@ -364,6 +363,14 @@ canvas {
         position: relative;
         background: url("/app/img/photos/img_half-slide_0#{$i}.jpg") center/cover no-repeat;
       }
+    }
+    &-img02 {
+      position: relative;
+      background: url("/app/img/photos/img_half-slide_02.jpg") center right/cover no-repeat;
+    }
+    &-img03 {
+      position: relative;
+      background: url("/app/img/photos/img_half-slide_03.jpg") center left/cover no-repeat;
     }
   }
 }

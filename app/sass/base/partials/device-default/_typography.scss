@@ -1,11 +1,16 @@
 // Here is brand typography. Base scss file located at: resources/assets/sass/base/partials/_typography.scss
-
 @import url('https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,600,700,800,900|Open+Sans:300,400,600,700,800|Roboto:100,300,400,500,700,900');
 @for $i from 1 through 9 {
   @if $i == 1 or $i == 2 or $i == 3 or $i == 5 or $i == 7 or $i == 9 {
     /*@include fontFace('Roboto', '../fonts/Roboto/Roboto-#{$i*100}', normal, #{$i*100});
     @include fontFace('Roboto', '../fonts/Roboto/Roboto-#{$i*100}i', italic, #{$i*100});*/
   }
+}
+@font-face {
+  font-family: 'Toyota';
+  src: url('/app/fonts/toyota/toyotatext_bd.ttf') format('truetype');
+  font-style: normal;
+  font-weight: 300;
 }
 @for $i from 3 through 5 {
   /*@include fontFace('Politica', '../fonts/Politica/Politica-#{$i*100}', normal, #{$i*100});
@@ -16,7 +21,7 @@
   font-weight: 200;
 }
 %title-default {
-  font-family: "Montserrat", sans-serif;
+  font-family: "Toyota", sans-serif;
   font-weight: 300;
   margin: 0 0 10px;
 }
