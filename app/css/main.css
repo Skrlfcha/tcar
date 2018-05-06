@@ -94,7 +94,8 @@ canvas {
 
 .page__absolute-text {
   position: absolute;
-  color: #fff; }
+  color: #fff;
+  font-family: "Toyota-text", sans-serif; }
   .page__absolute-text--hashtag span:nth-of-type(1) {
     font-size: 20px;
     font-weight: 700;
@@ -103,7 +104,7 @@ canvas {
   .page__absolute-text--main span:nth-of-type(2),
   .page__absolute-text--main span:nth-of-type(3) {
     font-size: 16px;
-    font-family: "Montserrat", sans-serif; }
+    font-family: "Toyota-text", sans-serif; }
   .page__absolute-text--main span:nth-of-type(2) {
     font-weight: 700; }
   .page__absolute-text--main span:nth-of-type(3) {
@@ -152,7 +153,7 @@ canvas {
   max-width: 600px;
   height: 60px;
   color: #fff;
-  font-family: "Open Sans", sans-serif;
+  font-family: "Toyota-text", sans-serif;
   font-size: 0;
   margin-top: 70px; }
   .page__buttons-container .page__nav-button {
@@ -246,7 +247,7 @@ canvas {
 .page__container {
   display: table;
   height: 100%;
-  width: 100%;
+  width: 1200px;
   margin: 0 auto;
   padding: 0 30px; }
   .page__container .page__vertical-aligment {
@@ -402,7 +403,13 @@ a.soc_anons {
     @include fontFace('Roboto', '../fonts/Roboto/Roboto-900i', italic, 900);*/
 @font-face {
   font-family: 'Toyota';
-  src: url("wowcamry70.kz/app/fonts/Toyota/toyotadisplay_bd.woff") format("truetype");
+  src: url("/app/fonts/Toyota/toyotatext_bd.ttf") format("truetype");
+  font-style: normal;
+  font-weight: 300; }
+
+@font-face {
+  font-family: 'Toyota-text';
+  src: url("/app/fonts/Toyota/toyotatext_rg.ttf") format("truetype");
   font-style: normal;
   font-weight: 300; }
 
@@ -556,7 +563,7 @@ a[data-custom-weight="900"], p[data-custom-weight="900"], span[data-custom-weigh
   font-weight: 900; }
 
 a, p, span, input {
-  font-family: "Open Sans", sans-serif; }
+  font-family: "Toyota-text", sans-serif; }
 
 .page__title {
   margin-bottom: 20px; }
@@ -655,7 +662,7 @@ a, p, span, input {
   border-left: 1px solid #fff;
   padding-left: 20px;
   padding: 5px 20px;
-  font-family: "Open Sans", sans-serif;
+  font-family: "Toyota-text", sans-serif;
   font-size: 14px;
   opacity: 1;
   font-weight: 400;
@@ -664,7 +671,7 @@ a, p, span, input {
 .page__menu-button {
   background: red;
   color: #fff;
-  font-family: "Open Sans", sans-serif;
+  font-family: "Toyota-text", sans-serif;
   width: 140px;
   text-align: center;
   line-height: 2.4;
@@ -694,7 +701,7 @@ a, p, span, input {
 
 .page__menu-link {
   color: #fff;
-  font-family: "Open Sans", sans-serif;
+  font-family: "Toyota-text", sans-serif;
   display: table-cell;
   padding: 25px 0;
   font-size: 14px;
@@ -730,7 +737,7 @@ a, p, span, input {
   font-size: 16px;
   color: #fff;
   font-weight: 100;
-  font-family: "Open Sans", sans-serif; }
+  font-family: "Toyota-text", sans-serif; }
   .footer__faq-title span, .footer__faq-text span {
     color: #e50000;
     font-weight: 700; }
@@ -1073,6 +1080,8 @@ a, p, span, input {
     background: url(/app/img/photos/bg_01_lastpage.jpg) top center/100% no-repeat, #edeced; }
   .page__section[data-section="2"] br {
     display: block; }
+  .page__about-7 {
+    background: url(/app/img/photos/bg_01_lastpage-mob.jpg) top center/100% no-repeat, #edeced; }
   .page__menu-line {
     display: none; }
   .page__menu {

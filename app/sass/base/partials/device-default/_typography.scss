@@ -8,7 +8,13 @@
 }
 @font-face {
   font-family: 'Toyota';
-  src: url('wowcamry70.kz/app/fonts/Toyota/toyotadisplay_bd.woff') format('truetype');
+  src: url('/app/fonts/Toyota/toyotatext_bd.ttf') format('truetype');
+  font-style: normal;
+  font-weight: 300;
+}
+@font-face {
+  font-family: 'Toyota-text';
+  src: url('/app/fonts/Toyota/toyotatext_rg.ttf') format('truetype');
   font-style: normal;
   font-weight: 300;
 }
@@ -66,7 +72,7 @@
 }
 
 a, p, span, input {
-  font-family: "Open Sans", sans-serif;
+  font-family: "Toyota-text", sans-serif;
   @extend %title-default;
   @extend %custom-size;
   @extend %text-color;

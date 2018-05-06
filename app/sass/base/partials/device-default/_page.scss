@@ -55,6 +55,7 @@ canvas {
   &-text {
     position: absolute;
     color: #fff;
+    font-family: "Toyota-text", sans-serif;
 
     &--hashtag {
       span:nth-of-type(1) {
@@ -68,7 +69,7 @@ canvas {
       span:nth-of-type(2),
       span:nth-of-type(3) {
         font-size: 16px;
-        font-family: "Montserrat", sans-serif;
+        font-family: "Toyota-text", sans-serif;
       }
       span:nth-of-type(2) {
         font-weight: 700;
@@ -131,7 +132,7 @@ canvas {
   max-width: 600px;
   height: 60px;
   color: #fff;
-  font-family: "Open Sans", sans-serif;
+  font-family: "Toyota-text", sans-serif;
   font-size: 0;
   margin-top: 70px;
 
@@ -255,7 +256,7 @@ canvas {
 .page__container {
     display: table;
     height: 100%;
-    width: 100%;
+    width: 1200px;
     margin: 0 auto;
     padding: 0 30px;
 
