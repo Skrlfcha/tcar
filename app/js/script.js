@@ -47,6 +47,7 @@ $(function(){
         let section_id = $(this).attr('data-go'),
             section = $('section[data-section="' + section_id + '"]');
         if (section.length != 0) {
+            $('.page__menu-links').slideUp();
             $('html, body').animate({scrollTop: $(section).offset().top - 70}, 500);
         }
         return false;
