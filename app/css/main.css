@@ -332,7 +332,7 @@ canvas {
   z-index: 10; }
 
 .page__about-7 {
-  background: url("/app/img/photos/bg_01_lastpage.jpg") center -20px/cover no-repeat; }
+  background: url("/app/img/photos/bg_01_lastpage.jpg") center/cover no-repeat; }
 
 .page__image--half-img01 {
   position: relative;
@@ -388,6 +388,9 @@ a.soc_anons {
     background: url("/app/img/ico/ins-wh.svg") center/30px no-repeat; }
   a.soc_anons.fb {
     background: url("/app/img/ico/fac-wh.svg") center/30px no-repeat; }
+
+.youtube-section {
+  display: none; }
 
 /*@include fontFace('Roboto', '../fonts/Roboto/Roboto-100', normal, 100);
     @include fontFace('Roboto', '../fonts/Roboto/Roboto-100i', italic, 100);*/

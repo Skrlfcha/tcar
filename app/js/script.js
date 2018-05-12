@@ -7,7 +7,7 @@ $(function(){
         autoplay: true,
         autoplaySpeed: 10000
     });
-    $('.js-slider-route, .js-slider-how, .js-slider-rules').slick({
+    $('.js-slider-route, .js-slider-how, .js-slider-rules, .js-slider-video').slick({
         arrows: false,
         dots: true,
         fade: true,
@@ -26,6 +26,10 @@ $(function(){
       $('.' + parent).slick('slickGoTo', parseInt(slide));
       if (parent == 'js-main-slider') {
         $('.js-toggle-slide').text(parseInt(slide) + 1);
+      }
+      if (parent == 'js-slider-video') {
+        $('.youtube-section').hide();
+        $('.youtube-section[data-section="' + slide + '"]').show();
       }
     });
     $('.js-show-block').on('click tap', function(){
