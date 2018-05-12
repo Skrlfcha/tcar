@@ -389,7 +389,7 @@ a.soc_anons {
   a.soc_anons.fb {
     background: url("/app/img/ico/fac-wh.svg") center/30px no-repeat; }
 
-.youtube-section {
+.videos-mob {
   display: none; }
 
 /*@include fontFace('Roboto', '../fonts/Roboto/Roboto-100', normal, 100);
@@ -1085,6 +1085,10 @@ a, p, span, input {
     display: block; }
   .page__about-7 {
     background: url(/app/img/photos/bg_01_lastpage-mob.jpg) top center/100% no-repeat, #edeced; }
+  .videos-mob {
+    display: block; }
+  .videos-desk {
+    display: none; }
   .page__menu-line {
     display: none; }
   .page__menu {
